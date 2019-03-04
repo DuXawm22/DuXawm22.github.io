@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321 -->
+<html class="dj_webkit dj_chrome dj_contentbox" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <title>Embedded Form Code | Mailchimp</title>    <meta name="copyright" content="Copyright (c) 2019 Mailchimp. All Rights Reserved."> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="apple-mobile-web-app-status-bar-style" content="black">  <meta content="//mailchimp.com/browserconfig.xml" name="msapplication-config"> <meta content="#FFE01B" name="msapplication-TileColor">  <link href="https://cdn-images.mailchimp.com/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"> <link href="https://cdn-images.mailchimp.com/favicons/touch-icon-192.png" rel="icon" sizes="192x192">  <link rel="shortcut icon" href="https://cdn-images.mailchimp.com/favicons/favicon.ico">  <link rel="mask-icon" href="https://cdn-images.mailchimp.com/favicons/mask-icon.svg" color="#241C15">  <link rel="stylesheet" type="text/css" href="./Embedded Form Code _ Mailchimp_files/typefaces.css"> <link rel="stylesheet" type="text/css" href="./Embedded Form Code _ Mailchimp_files/application.css">                <script src="./Embedded Form Code _ Mailchimp_files/1592378257726461" async=""></script><script async="" src="./Embedded Form Code _ Mailchimp_files/fbevents.js.download"></script><script async="" src="./Embedded Form Code _ Mailchimp_files/uwt.js.download"></script><script type="text/javascript" async="" src="./Embedded Form Code _ Mailchimp_files/insight.min.js.download"></script><script async="" src="./Embedded Form Code _ Mailchimp_files/main.4a81c615.js.download"></script><script async="" src="./Embedded Form Code _ Mailchimp_files/core.js.download"></script><script type="text/javascript" async="" src="./Embedded Form Code _ Mailchimp_files/f.txt"></script><script src="./Embedded Form Code _ Mailchimp_files/ytc.js.download" async=""></script><script src="./Embedded Form Code _ Mailchimp_files/bat.js.download" async=""></script><script async="" src="./Embedded Form Code _ Mailchimp_files/analytics.js.download"></script><script async="" src="./Embedded Form Code _ Mailchimp_files/gtm.js.download"></script><script mc:noreorder="">
+    window.gtmData = {
+        hasUser: true,
+        userId: 112737042,
+        loginId: "828477a28a7b12d4db12147f24804335",
+        UA: "UA-329148-81",
+        version: "1",
+        gaDimensions: [],
+        deferToGTM: false    };
+
+    (function /* gtmAPI */ () {
+
+        function buildCustomDimensions() {
+            var result = { 9: window.gtmData.version.toString() };
+            if(window.gtmData.hasUser) {
+                result[8] = window.gtmData.userId.toString();
+                result[24] = window.gtmData.loginId.toString();
+            }
+
+            var dims = window.gtmData.gaDimensions;
+            Object.keys(dims).forEach(function(dim) {
+                var index = parseInt(dim.replace('dimension', ''));
+                if(!isNaN(index)) {
+                    // sometimes things get into this array that are not numbered dimensions
+                    result[index] = dims[dim];
+                }
+            });
+            return result;
+        }
+
+        function gtmPayload(hitType, data) {
+            data = data || {};
+
+            data['_gtm_deferred'] = window.gtmData.deferToGTM;
+            data['type'] = hitType;
+            data['UA'] = window.gtmData.UA;
+            data['customDimensions'] = buildCustomDimensions();
+
+            data['customVariables'] = data['customVariables'] || {};
+            data['customVariables']['eventSource'] = 'gtm';
+            return data;
+        }
+
+        /**
+         * Records a GTM event, with custom variables. Accepts either:
+         *
+         *   gtmEvent('event category', { 'foo': 'bar' })
+         *
+         * or:
+         *
+         *   gtmEvent({
+         *     'eventCategory': 'event category',
+         *     'eventAction': 'event action',
+         *     'eventLabel': 'etc',
+         *     'eventValue': 1
+         *    }, { 'foo': 'bar' })
+         *
+         * For eventInfo guidelines see:
+         *   https://support.google.com/analytics/answer/1033068?hl=en
+         */
+        window.gtmEvent = function(eventInfo, customVariables) {
+            if(typeof eventInfo === 'string') {
+                eventInfo = { 'eventCategory': eventInfo };
+            }
+            customVariables = customVariables || {};
+
+            var event = gtmPayload('EVENT', {
+                'event': 'e_action',
+                'eventInfo': eventInfo,
+                'customVariables': customVariables
+            });
+
+            window.dataLayer.push(event);
+        };
+
+        window.dataLayer = [gtmPayload('PAGE')];
+    })();
+</script>  <script mc:noreorder="">
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCZTKL');
+    // setup the GA command queue
+    window['GoogleAnalyticsObject'] = '_ga';
+    window._ga = window._ga || function() {
+        window._ga.q = window._ga.q || [];
+        window._ga.q.push(arguments);
+    };
+</script>
+
+
+ <script mc:noreorder="">
+    function debuglog() {
+        if(typeof window._debug_analytics !== 'undefined' && window._debug_analytics) {
+            console.log.apply(console, arguments);
+        }
+    }
+
+    window.ga = function /*decoratedGoogleAnalytics*/() {
+        var args = [].slice.call(arguments, 0);
+        if (typeof args[0] === 'string'
+            && args[0] !== 'create'
+            && args[0] !== 'provide') {
+            args[0] = 't0.' + args[0];
+        }
+        debuglog('ga', args);
+        return _ga.apply(this, args);
+    };
+
+    (function /*initializeGoogleAnalytics*/() {
+        var gtmData = window.gtmData;
+
+        var dimensions = {
+            USER_ID: 'dimension8',
+            LOGIN_ID: 'dimension24',
+            TRACKING_VERSION: 'dimension9'
+        };
+
+        function trackGA() {
+            if (gtmData.hasUser) {
+                ga("create", gtmData.UA, "auto", {
+                    allowLinker: false,
+                    userId: gtmData.userId,
+                    name: 't0'
+                });
+
+                ga("set", dimensions.USER_ID, gtmData.userId.toString());
+                ga("set", dimensions.LOGIN_ID, gtmData.loginId.toString());
+            } else {
+                ga("create", gtmData.UA, "auto", {
+                    allowLinker: false,
+                    name: 't0'
+                });
+            }
+            ga("set", dimensions.TRACKING_VERSION, gtmData.version);
+
+            ga("require","linker");
+            ga("linker:autoLink", [/(.*\.)?mailchimp(app)?\.com$/], !1,!0);
+
+            ga("send", "pageview", gtmData.gaDimensions);
+        }
+
+        if (!gtmData.deferToGTM) {
+            trackGA();
+        }
+    })();
+</script>      <style type="text/css">
+        .migration {
+            display: none;
+        }
+    </style>  <script src="./Embedded Form Code _ Mailchimp_files/f(1).txt"></script><style type="text/css" media="print">.usabilla_live_button_container { display: none; }</style></head> <body class="mcd   relative full-height-vh flex flex-col overflow-hidden"><div style="display: none;" id="lightningjs-usabilla_live"><div><iframe frameborder="0" id="lightningjs-frame-usabilla_live" src="./Embedded Form Code _ Mailchimp_files/saved_resource.html"></iframe></div></div>  <noscript> <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCZTKL" height="0" width="0" style="display:none;visibility:hidden"> </iframe> </noscript>               <div class="novip">  <div data-dojo-type="mojo/widgets/MainNavigation" class="main-navigation selfclear" aria-hidden="false" role="navigation" tabindex="0" id="uniqName_2_0" lang="en" widgetid="uniqName_2_0">  <div class="line selfclear">  <nav class="navigation-left float-left"> <ul class="linear-list selfclear">  <li class="nav-link show-mobile"> <button type="button" aria-label="Open navigation" data-dojo-attach-point="hamburger" mc:track-action="Hamburger" class="menu-button no-delay navigationItem c-navigationItem_button alignc padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Hamburger&#39;, &#39;icon&#39;);"><span class="freddicon hamburger"></span></button> </li>  <li class="nav-link branding"> <a mc:track-action="Home" href="https://us20.admin.mailchimp.com/" aria-label="Main dashboard" class="no-delay navigationItem alignc padding--lv3 !padding-top-bottom--lv0" id="freddielink" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Home&#39;, &#39;/&#39;);"> <img src="./Embedded Form Code _ Mailchimp_files/mc-freddie-dark.svg" width="38" height="38" alt="Mailchimp logo" role="presentation">                                             </a> </li>  <li class="nav-link hide-mobile"><a href="https://us20.admin.mailchimp.com/campaigns/" aria-label="Campaigns" title="Design and send campaigns" class=" navigationItem alignc padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked Campaigns&#39;, &#39;/campaigns/&#39;);">Campaigns</a></li>  <li class="nav-link hide-mobile"><a href="https://us20.admin.mailchimp.com/templates/" aria-label="Templates" title="Create and edit reusable email templates" class=" navigationItem alignc padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked Templates&#39;, &#39;/templates/&#39;);">Templates</a></li>  <li class="nav-link hide-mobile"><a href="https://us20.admin.mailchimp.com/lists" aria-label="Lists" title="Create lists, add subscribers, create sign up forms" class="selected navigationItem alignc padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked Lists&#39;, &#39;/lists&#39;);">Lists</a></li>  <li class="nav-link hide-mobile"><a href="https://us20.admin.mailchimp.com/reports/" aria-label="Reports" title="Track the outcome of your campaigns" class=" navigationItem alignc padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked Reports&#39;, &#39;/reports/&#39;);">Reports</a></li>  <li class="nav-link hide-mobile"> <a href="https://us20.admin.mailchimp.com/content/" aria-label="Content" title="Manage your images and content" class=" navigationItem alignc padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked Content Manager&#39;, &#39;/content/&#39;);">Content Manager</a> </li>     </ul> </nav>  <nav class="navigation-right float-right flex">                         <div class="flex hide-mobile"> <button data-event-category="Primary" data-test-id="createCampaignButton" class="p1 align-self--center" id="dijit__TemplatedMixin_0" lang="en" widgetid="dijit__TemplatedMixin_0">Create</button> </div>                        <ul class="linear-list selfclear">  <li class="nav-link full-height"><a mc:track-action="Clicked Search" data-dojo-attach-point="searchButton" aria-label="Global search" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" class="nav-search-button no-delay navigationItem alignc padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked Search&#39;, &#39;icon&#39;);"><span class="freddicon search !margin--lv0"></span></a></li>  <li class="nav-link full-height"><a mc:track-action="Clicked Help" data-dojo-attach-point="helpButton" title="Get help by referring to the knowledge base articles, answers and glossary" aria-label="Get help by referring to the knowledge base articles, answers and glossary" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" class="nav-help-button no-delay navigationItem alignc padding--lv3 !padding-top-bottom--lv0" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked Help&#39;, &#39;(not set)&#39;);">Help</a></li>  <li class="nav-link full-height"> <a mc:track-action="Clicked Account" data-dojo-attach-point="accountButton" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" class="account-button no-delay navigationItem alignc padding--lv3 !padding-top-bottom--lv0 hide-phone" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Global Navigation&#39;, &#39;Clicked Account&#39;, &#39;(not set)&#39;);"> <div role="presentation" class="logged-in-avatar inline-block avatar !margin--lv0" style="background-image: url(https://secure.gravatar.com/avatar/08eb2532a04e1416aaac9facc4a18857.jpg?s=300&amp;d=https%3A%2F%2Fcdn-images.mailchimp.com%2Ficons%2Fletter-avatars%2Fv.png)">  </div> <div aria-label="Signed in as Vincent - click to toggle account menu" class="account-name inline-block hide-mobile valign-middle alignl margin--lv2 !margin-top-bottom--lv0 !margin-right--lv0"> <span aria-label="Signed in as Vincent">Vincent</span><br> <span class="fwn" aria-label="Account name">test</span> </div> <span class="inline-block freddicon menu-down margin--lv1 !margin-top-bottom--lv0 !margin-right--lv0"></span> </a> </li> </ul> </nav> </div> </div>    <div data-dojo-type="mojo/widgets/PhoneNavigation" aria-hidden="true" class="phone-overlay-container c-baseOverlay selfclear" role="navigation" id="uniqName_3_0" lang="en" widgetid="uniqName_3_0">  <div data-dojo-attach-point="closeButton" title="Close menu" class="close-overlay close-left freddicon cross absolute cursor-pointer"></div>  <div class="line selfclear"> <nav class="mobile-nav lastGroup size1of1 overflow-visible selfclear"> <ul mc:track="phone navigation" class="primary-links selfclear">  <li><a mc:track-label="phone-menu campaigns" href="https://us20.admin.mailchimp.com/campaigns/" title="Design and send campaigns" class="phone-menu-link relative padding--lv3 ">Campaigns</a></li>  <li><a mc:track-label="phone-menu templates" href="https://us20.admin.mailchimp.com/templates/" title="Create and edit reusable email templates" class="phone-menu-link relative padding--lv3 ">Templates</a></li>  <li><a mc:track-label="phone-menu lists" href="https://us20.admin.mailchimp.com/lists/" aria-label="Lists" title="Create lists, add subscribers, create sign up forms" class="phone-menu-link relative padding--lv3 selected">Lists</a></li>  <li><a mc:track-label="phone-menu reports" href="https://us20.admin.mailchimp.com/reports/" title="Track the outcome of your campaigns" class="phone-menu-link relative padding--lv3 ">Reports</a></li>  <li mc:track-label="tablet-menu content"> <a href="https://us20.admin.mailchimp.com/content/" aria-label="Content" title="Manage your images and content" class=" phone-menu-link relative padding--lv3">Content Manager</a> </li>  <li><hr class="margin--lv4 !margin-left-right--lv0 !margin-bottom--lv0"></li>  <li class="padding--lv3 !padding-left--lv0"> <div class="media lastGroup size1of1 overflow-visible selfclear"> <div role="presentation" class="media-image margin--lv3 !margin-top-bottom--lv0"> <div role="presentation" class="c-mobileNavigationAvatar padding--lv4" style="background-image: url(https://secure.gravatar.com/avatar/08eb2532a04e1416aaac9facc4a18857.jpg?s=300&amp;d=https%3A%2F%2Fcdn-images.mailchimp.com%2Ficons%2Fletter-avatars%2Fv.png); background-size: contain;"></div> </div> <div class="media-body"> <p class="fwb !margin--lv0">test</p> <p class="!margin--lv0" aria-label="Signed in as Vincent">Vincent <span class="badge success capitalize inline-block valign-middle">owner</span></p> </div> </div> </li> </ul> </nav>  <div class="phone-account-menu sliding-card--mask sliding-card--phone-mask selfclear"> <div class="sliding-card--container sliding-card--phone-container relative"> <nav class="sliding-card sliding-card--phone selfclear" role="navigation"> <ul mc:track="phone navigation" class="selfclear">   <li> <a data-dojo-attach-point="slideNotifications" id="phone-notifications-link" mc:track-label="phone-menu notifications" class="phone-menu-link relative padding--lv3" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#"> Notifications<span class="float-right freddicon menu-right-on-right"></span> <span class="badge notification float-right account-menu_notificationBadge hide" data-mc-notification-count="" style="display:none;">0</span> </a> </li>    <li><a mc:track-label="phone-menu profile" class="phone-menu-link relative padding--lv3" href="https://us20.admin.mailchimp.com/account/profile/">Profile</a></li>  <li><a mc:track-label="phone-menu connected-sites" class="phone-menu-link relative padding--lv3" href="https://us20.admin.mailchimp.com/account/connected-sites/">Connected Sites</a></li>  <li> <a mc:track-label="phone-menu account-settings" href="https://us20.admin.mailchimp.com/account/" class="phone-menu-link relative padding--lv3"> Account  </a> </li>  <li><a mc:track-label="phone-menu logout" class="phone-menu-link relative padding--lv3" href="https://us20.admin.mailchimp.com/login/out/">Log Out</a></li> </ul> </nav><p class="c-legalNotice margin-bottom--lv0 padding--lv3 padding-bottom--lv2 padding-top--lv2"> <a class="textcolor--secondary" href="http://mailchimp.com/legal/privacy" target="_blank" rel="noopener noreferrer">Privacy</a> and <a class="textcolor--secondary" href="http://mailchimp.com/legal/" target="_blank" rel="noopener noreferrer">Terms</a> </p>   <div data-dojo-attach-point="notificationsCard" class="sliding-card sliding-card--phone sliding-card--phone-notifications absolute" data-dojo-type="mojo/widgets/Notifications" id="dijit__AttachMixin_0" lang="en" widgetid="dijit__AttachMixin_0"> <ul class="selfclear"> <li class="sliding-card--sticky padding--lv3 alignc fwb flex flex-between"> <a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" data-dojo-attach-point="slideBackNotifications" class="sliding-card--back fwn"><span class="freddicon menu-left-on-left"></span>Back</a> <span>Notifications</span> <a data-dojo-attach-point="dismissAllNotifications" href="javascript:;" class="sliding-card--back fwn invisible">Dismiss All</a> </li>  <li class="padding--lv3" data-dojo-attach-point="noDataDom" style=""> <div class="no-notifications alignc"> <div class="c-noDataBlock_icon margin-bottom--lv1" style="background-image: url(/images/brand_assets/illos/art-empty-notifications.png)"></div> <p>No notifications right now.</p> </div> </li>  <li style="display:none;"> <ul class="notification-list--app">     </ul> </li> </ul> </div>  <div data-dojo-attach-point="accountCard" class="sliding-card sliding-card--phone sliding-card--phone-accounts absolute"> <ul class="phone-account-list" role="navigation"> <li class="sliding-card--sticky padding--lv3 alignc fwb"><a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" data-dojo-attach-point="slideBackAccount" class="sliding-card--back absolute fwn"><span class="freddicon menu-left-on-left"></span>Back</a>Switch Account</li>   <li class="acl-account" data-account-name="test" title="Signed in as test"> <a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" class="account-link nolink padding--lv3 border-bottom">test <span role="presentation" class="freddicon tick float-right"></span> </a>  </li> </ul> </div> </div> </div> </div> </div>   <div data-dojo-type="mojo/widgets/TabletNavigation" aria-hidden="true" class="tablet-overlay-container c-baseOverlay selfclear hide-phone" role="navigation" id="uniqName_2_1" lang="en" widgetid="uniqName_2_1">  <button type="button" id="close-tablet-nav" aria-label="Close navigation" data-dojo-attach-point="closeButton" title="Close menu" class="close-overlay close-left c-overlayCloseButton absolute cursor-pointer"><span class="freddicon cross"></span></button>  <div class="line selfclear"> <nav class="mobile-nav lastGroup size1of3 centered selfclear"> <ul mc:track="tablet navigation" class="alignc selfclear">  <li><a mc:track-label="tablet-menu campaigns" href="https://us20.admin.mailchimp.com/campaigns/" title="Design and send campaigns" class="tablet-menu-link inline-block relative padding--lv5 ">Campaigns</a></li>  <li><a mc:track-label="tablet-menu templates" href="https://us20.admin.mailchimp.com/templates/" title="Create and edit reusable email templates" class="tablet-menu-link inline-block relative padding--lv5 ">Templates</a></li>  <li><a mc:track-label="tablet-menu lists" href="https://us20.admin.mailchimp.com/lists/" aria-label="Lists" title="Create lists, add subscribers, create sign up forms" class="tablet-menu-link inline-block relative padding--lv5 selected">Lists</a></li>  <li><a mc:track-label="tablet-menu reports" href="https://us20.admin.mailchimp.com/reports/" title="Track the outcome of your campaigns" class="tablet-menu-link inline-block relative padding--lv5 ">Reports</a></li>  <li mc:track-label="tablet-menu content"> <a href="https://us20.admin.mailchimp.com/content/" aria-label="Content" title="Manage your images and content" class=" tablet-menu-link inline-block relative padding--lv5">Content Manager</a> </li>  </ul> </nav> </div> </div>    <div data-dojo-type="mojo/widgets/AccountMenu" class="account-menu sliding-card--mask border-radius--lv2 border-gray selfclear fixed hide-phone" aria-hidden="true" id="uniqName_3_1" lang="en" widgetid="uniqName_3_1"> <div class="sliding-card--container relative">  <nav class="sliding-card bg-white selfclear" role="navigation"> <ul class="small-meta">   <li class="border-bottom"> <a data-dojo-attach-point="slideNotifications" mc:track="" href="javascript:;" id="notifications-link" class="account-link nolink padding--lv3">Notifications <span class="freddicon menu-right-on-right float-right" role="presentation"></span> <span class="badge notification float-right account-menu_notificationBadge hide" data-mc-notification-count="" style="display:none;">0</span> </a> </li>    <li class="border-bottom"><a mc:track="" href="https://us20.admin.mailchimp.com/account/profile/" class="account-link nolink padding--lv3">Profile</a></li>  <li class="border-bottom"> <a mc:track="" href="https://us20.admin.mailchimp.com/account/connected-sites/" class="account-link nolink padding--lv3" data-dojo-attach-point="connectedSitesNode">  <div id="dijit__WidgetsInTemplateMixin_0" lang="en" widgetid="dijit__WidgetsInTemplateMixin_0">Connected Sites</div> </a> </li>  <li class="border-bottom"> <a mc:track="" href="https://us20.admin.mailchimp.com/account/" class="account-link nolink padding--lv3 display--flex justify-content--space-between align-items--baseline"> Account  </a> </li>  <li><a mc:track="" href="https://us20.admin.mailchimp.com/login/out/" class="account-link nolink padding--lv3">Log Out</a></li> </ul> </nav><p class="border-top c-legalNotice margin-bottom--lv0 padding--lv3 padding-bottom--lv2 padding-top--lv2 bg-white"> <a class="textcolor--secondary" href="http://mailchimp.com/legal/privacy" target="_blank" rel="noopener noreferrer">Privacy</a> and <a class="textcolor--secondary" href="http://mailchimp.com/legal/" target="_blank" rel="noopener noreferrer">Terms</a> </p>   <div data-dojo-attach-point="notificationsCard" class="sliding-card bg-white sliding-card--notifications absolute" data-dojo-type="mojo/widgets/Notifications" id="dijit__AttachMixin_1" lang="en" widgetid="dijit__AttachMixin_1"> <div class="small-meta sliding-card--sticky padding-top--lv2 padding-bottom--lv2 padding-left--lv3 padding-right--lv3 font-weight--bold alignc flex flex-between"> <a data-dojo-attach-point="slideBackNotifications" href="javascript:;" class="sliding-card--back fwn"><span class="freddicon menu-left-on-left"></span>Back</a> <span class="padding-left--lv1 inline-block">Notifications</span> <a data-dojo-attach-point="dismissAllNotifications" href="javascript:;" class="sliding-card--back fwn invisible">Dismiss All</a> </div> <ul class="small-meta relative notification-list overflow-y--auto">  <li class="padding--lv2 !padding-top-bottom--lv0" data-dojo-attach-point="noDataDom" style=""> <div class="no-notifications alignc"> <div class="c-noDataBlock_icon c-noDataBlock_icon--compact margin-bottom--lv1" style="background-image: url(/images/brand_assets/illos/art-empty-notifications.png)"></div> <p>No notifications right now.</p> </div> </li>  <li class="padding--lv3 !padding-top-bottom--lv0" style="display:none;"> <ul class="notification-list--app overflow-y--auto overflow-x--hidden">     </ul> </li> </ul> </div>  <div data-dojo-attach-point="accountCard" class="sliding-card bg-white sliding-card--accounts absolute"> <ul class="account-list small-meta" role="navigation"> <li class="sliding-card--sticky padding--lv3 font-weight--bold alignc"><a data-dojo-attach-point="slideBackAccount" href="javascript:;" class="sliding-card--back absolute fwn"><span class="freddicon menu-left-on-left"></span>Back</a>Switch Account</li>   <li class="acl-account" data-account-name="test" title="Signed in as test"> <a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" class="account-link nolink padding--lv3 border-bottom">test <span role="presentation" class="freddicon tick float-right"></span> </a>  </li> </ul> </div> </div> </div>   <div data-dojo-type="mojo/widgets/GlobalSearch" role="search" aria-hidden="true" class="search-overlay-container c-baseOverlay selfclear" id="uniqName_2_2" lang="en" widgetid="uniqName_2_2">  <div data-dojo-attach-point="closeButton" title="Close menu" class="close-overlay close-right freddicon cross absolute cursor-pointer"></div> <div class="global-search mc-small-content">   <form data-dojo-attach-point="globalSearchForm" id="main-search" class="!margin-bottom--lv8" method="get" url="/search" novalidate="novalidate"> <h2 class="alignc !margin-bottom--lv4 fwb">Search Campaigns and Contacts</h2>  <div class="big-search-container relative !margin-bottom--lv3">   <table class="dijit dijitReset dijitInline dijitLeft dijitSelect dijitValidationTextBox dijitDownArrowButton big-search-filter small-select" data-dojo-attach-point="_buttonNode,tableNode,focusNode,_popupStateNode" cellspacing="0" cellpadding="0" role="listbox" aria-haspopup="true" tabindex="0" lang="en" id="search-filter" style="user-select: none;" widgetid="search-filter" aria-expanded="false" aria-invalid="false"><tbody role="presentation"><tr role="presentation"><td class="dijitReset dijitButtonContents overflow--hidden white-space--normal" role="presentation"><div class="dijitReset dijitInputField dijitButtonText" data-dojo-attach-point="containerNode,textDirNode" role="presentation"><span role="option" class="dijitReset dijitInline dijitSelectLabel dijitValidationTextBoxLabel ">Current List</span></div><div class="dijitReset dijitValidationContainer"><input class="dijitReset dijitInputField dijitValidationIcon dijitValidationInner" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation"></div><input type="hidden" name="entities" data-dojo-attach-point="valueNode" value="listmembers-32321" aria-hidden="true"></td><td class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton dijitArrowButtonContainer" data-dojo-attach-point="titleNode" role="presentation"><input class="dijitReset dijitInputField dijitArrowButtonInner" value="▼ " type="text" tabindex="-1" readonly="readonly" role="presentation"></td></tr></tbody></table>  <input data-dojo-attach-point="globalSearchField" data-dojo-props="intermediateChanges:true" id="global-search" name="global-search" class="big-search-field !margin--lv0 full-width av-search" type="search" tabindex="0" autofocus="autofocus" placeholder="Search test">  <span class="big-search-controls"> <span data-dojo-attach-point="clearIcon" class="freddicon cross clear-search hide cursor-pointer absolute"></span> <button data-dojo-attach-point="searchIcon" type="submit" class="icon-search button freddicon solidsearch !margin--lv0"></button> </span>  <div data-dojo-attach-point="loadIcon" class="loading-search hide padding--lv5 absolute"></div> </div> <div class="line !margin-bottom--lv3"> <div class="lastUnit size1of1 alignc small-meta"> <a href="javascript:;" id="search-tips" title="Search Tips" onclick="mojo.utils.toggleEl(this, &#39;hotkey-help-search-pane&#39;, &#39;Advanced search keywords&#39;, &#39;Close advanced search keywords&#39;); return false;">Advanced search keywords</a> </div> </div>  <div id="hotkey-help-search-pane" class="hotkey-help-search-pane !margin-bottom--lv5 bg-white border-gray border-radius--lv1 padding--lv4 relative" style="display:none;"> <div data-dojo-attach-point="keywords" class="line main-section"> <div class="sub-section"> <p class="alignc full-width">Use the keywords below to help find what you’re looking for.</p> <p class="alignc full-width">Type <code class="badge success">keyword</code> followed by <code class="badge">:</code> and <code class="badge warning">your query</code></p> <p class="alignc full-width">For example, <code>subject:holidays</code> or <code>email:google.com</code>.</p> </div> <div class="line sub-section"> <div class="group size1of2"> <h4>Campaigns</h4> <ul class="dotted-list list-squished"> <li class="code searchkeyword"><a href="javascript:;">fromname:</a></li> <li class="code searchkeyword"><a href="javascript:;">subject:</a></li> <li class="code searchkeyword"><a href="javascript:;">name:</a></li> <li class="code searchkeyword"><a href="javascript:;">type:regular</a></li> <li class="code searchkeyword"><a href="javascript:;">type:automation</a></li> <li class="code searchkeyword"><a href="javascript:;">type:rss</a></li> <li class="code searchkeyword"><a href="javascript:;">type:ad</a></li> <li class="code searchkeyword"><a href="javascript:;">email_status:draft</a></li> <li class="code searchkeyword"><a href="javascript:;">email_status:sent</a></li> <li class="code searchkeyword"><a href="javascript:;">email_status:sending</a></li> <li class="code searchkeyword"><a href="javascript:;">ad_status:draft</a></li> <li class="code searchkeyword"><a href="javascript:;">ad_status:completed</a></li> <li class="code searchkeyword"><a href="javascript:;">ad_status:active</a></li> </ul> </div> <div class="lastGroup size1of2"> <h4>Lists</h4> <ul class="dotted-list list-squished !margin--lv0"> <li class="code searchkeyword"><a href="javascript:;">email:</a></li> <li class="code searchkeyword"><a href="javascript:;">merge1:</a></li> <li class="code searchkeyword"><a href="javascript:;">merge2:</a></li> </ul> </div> </div> </div> </div> <input type="hidden" name="__csrf_token" id="" value="7cad51b6b0e265b2b3c079e325d688bd92648c19" class="av-hidden"></form>  <div data-dojo-attach-point="searchError" class="line section hide search-error"> <div class="feedback-block error"> <div class="lastUnit size1of1"> <div class="media"> <div class="media-image"> <span class="freddicon not-allowed"></span> </div> <div class="media-body"> <h4>Something went wrong.</h4> <p>There was an error processing the request.</p> </div> </div> </div> </div> </div>  <div data-dojo-attach-point="searchCount" id="search-count" class="lastUnit size1of1 !padding--lv0 hide !margin-bottom--lv1"> <p class="!margin--lv0 full-width"> <span data-dojo-attach-point="totalCount" class="result-count-total fwb">0</span> </p> </div>  <div data-dojo-attach-point="searchResults" id="search-results-data"> <div class="results"></div> </div> </div> </div>   <div data-dojo-type="mojo/widgets/KbSearch" class="kb-overlay-container c-baseOverlay selfclear" role="search" aria-hidden="true" id="uniqName_2_3" lang="en" widgetid="uniqName_2_3">  <div title="Close menu" data-dojo-attach-point="closeButton" class="close-overlay close-right freddicon cross absolute cursor-pointer"></div> <div> <div data-dojo-attach-point="searchPanel" class="global-search mc-small-content"> <form data-dojo-attach-point="searchForm" class="kb-search !margin-bottom--lv8" method="get" novalidate="novalidate"> <h2 class="alignc !margin-bottom--lv4 fwb">Search the Knowledge Base</h2>  <div class="big-search-container relative !margin-bottom--lv3">  <input data-dojo-attach-point="searchInput" name="kb-search" class="big-search-field !margin--lv0 full-width av-search" type="search" tabindex="0" autofocus="autofocus" placeholder="Search articles" id="kb-search">  <span class="big-search-controls"> <span data-dojo-attach-point="clearIcon" class="freddicon cross clear-search hide cursor-pointer absolute"></span> <button data-dojo-attach-point="searchIcon" type="submit" class="button freddicon solidsearch !margin--lv0"></button> </span>  <div class="loading-search hide padding--lv5 absolute" data-dojo-attach-point="searchLoader"></div> </div> <input type="hidden" name="__csrf_token" id="" value="7cad51b6b0e265b2b3c079e325d688bd92648c19" class="av-hidden"></form>   <div class="line section hide search-error"> <div class="feedback-block error"> <div class="lastUnit size1of1"> <div class="media"> <div class="media-image"> <span class="freddicon not-allowed"></span> </div> <div class="media-body"> <h4>Something went wrong.</h4> <p>There was an error processing the request.</p> </div> </div> </div> </div> </div>  <div id="kb-recommended" class="kb-recommended line main-section" data-dojo-attach-point="recommendedContainer"> <div class="lastGroup size1of1"> <h3>Recommended Articles</h3> <ul class="recommended-articles" data-dojo-attach-point="recommendedArticlesContainer"></ul> </div> </div>  <div id="kb-results" class="line main-section" data-dojo-attach-point="resultsContainer" style="display: none;"> <div class="lastGroup size1of1 section">  <div class="line" data-dojo-attach-point="resultsList"></div> </div> </div> </div> <div data-dojo-attach-point="contentPanel" class="global-search mc-small-content" style="display: none;"> <a class="p !margin-bottom--lv6" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" data-dojo-attach-point="backLink"> <span class="freddicon menu-left-on-left" role="presentation" aria-hidden="true"></span>Back to Search </a> <div data-dojo-attach-point="contentContainer"></div> </div> </div> </div>  </div><script type="text/javascript" id="">(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date;c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})(window,document,"script","//www.google-analytics.com/analytics.js","_ga");var i,l;
+for(i=1;4>i;i++)document.querySelector("div:nth-child(5) \x3e div:nth-child(2) \x3e div:nth-child("+i+") \x3e p.margin-bottom--lv1 \x3e a")&&(l=document.querySelector("div:nth-child(5) \x3e div:nth-child(2) \x3e div:nth-child("+i+") \x3e p.margin-bottom--lv1 \x3e a").innerText,document.querySelector("div:nth-child(5) \x3e div:nth-child(2) \x3e div:nth-child("+i+") \x3e p.margin-bottom--lv1 \x3e a").addEventListener("click",getcta(l)));
+for(i=1;3>i;i++)document.querySelector("div:nth-child(5) \x3e div:nth-child(3) \x3e div:nth-child("+i+") \x3e p.margin-bottom--lv1 \x3e a")&&(l=document.querySelector("div:nth-child(5) \x3e div:nth-child(3) \x3e div:nth-child("+i+") \x3e p.margin-bottom--lv1 \x3e a").innerText,document.querySelector("div:nth-child(5) \x3e div:nth-child(3) \x3e div:nth-child("+i+") \x3e p.margin-bottom--lv1 \x3e a").addEventListener("click",getcta(l)));
+function getcta(a){return function(){ga("send",{hitType:"event",eventCategory:"Navigation",eventAction:"Shortcuts to Helpful Stuff",eventLabel:a})}};</script><script type="text/javascript" id="">var cat="Bing UET",act="undefined"===typeof User?"(not set)":User.userLevel;
+"object"!=typeof uetq&&function(b,c,e,f,d){b[d]=b[d]||[];var g=function(){var a={ti:"4058566"};a.q=b[d];b[d]=new UET(a);b[d].push("pageLoad")};var a=c.createElement(e);a.src=f;a.async=1;a.onload=a.onreadystatechange=function(){var b=this.readyState;b&&"loaded"!==b&&"complete"!==b||(g(),a.onload=a.onreadystatechange=null)};c=c.getElementsByTagName(e)[0];c.parentNode.insertBefore(a,c)}(window,document,"script","//bat.bing.com/bat.js","uetq");window.uetq=window.uetq||[];window.uetq.push({ec:cat,ea:act});</script>
+<script type="text/javascript" id="" src="./Embedded Form Code _ Mailchimp_files/js"></script><meta name="google-site-verification" content="V4mQVza_GHx-KlR9WJk9sfwrPDxEyYVZ8eNj9jyAU_g"><script type="text/javascript" id="">(function(d,a,b,f,e){d[e]=d[e]||[];d[e].push({projectId:"10000",properties:{pixelId:"10005633"}});var c=a.createElement(b);c.src=f;c.async=!0;c.onload=c.onreadystatechange=function(){var a=this.readyState,c=d[e];if(!a||"complete"==a||"loaded"==a)try{var b=YAHOO.ywa.I13N.fireBeacon;d[e]=[];d[e].push=function(a){b([a])};b(c)}catch(g){}};a=a.getElementsByTagName(b)[0];b=a.parentNode;b.insertBefore(c,a)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script>  <div id="slot-campaignChecklistStatusBar"></div> <div id="slot-supportKnobWindow"></div>  <div id="wrap" class="wrap flex flex-direction--column overflow-auto-y overflow-hidden-x v-clearSafeAreaInset">  <div id="slot-preMainContent"></div>  <div id="main-content" class="main-content mc-content flex flex-col selfclear">  <div class="lastUnit size1of1 overflow-visible flex-shrink-none"> <div id="av-flash-block" class="c-flashBlock">     </div> </div>    <div role="main" id="content" class="content selfclear relative"> <div class="lastUnit size1of1 header overflow-visible selfclear">   <div> <h1 class="selfclear"> <span class="title" title="test">test</span> <a class="sub-count" href="https://us20.admin.mailchimp.com/lists/members/?id=32321" title="Your subscribed contacts">1</a> </h1>  </div> </div> <div class="line local-nav-container"> <div class="lastUnit size1of1">     <div data-dojo-type="mojo/widgets/LocalNavBar" id="dijit__WidgetBase_0" lang="en" widgetid="dijit__WidgetBase_0"> <p class="c-menuBarToggle !margin--lv0 full-width padding--lv2 border-top border-bottom font-weight--bold cursor-pointer"> Navigation <span class="freddicon menu-down float-right" role="presentation" aria-hidden="true"></span> </p> <nav class="c-menuBar" aria-label="Lists Menu" tabindex="-1"> <ul data-dojo-type="mojo/widgets/AccessibleMenuBar" class="selfclear border-bottom" id="dijit__FocusMixin_0" lang="en" widgetid="dijit__FocusMixin_0" role="menubar">  <li class="c-menuParent relative font-weight--bold  cursor-pointer" title="See list perfomance, social profiles and tweet trends for this list" tabindex="0" role="menuitem" aria-haspopup="true" data-submenu="true"> <span class="v-menuParent">Stats <span class="freddicon menu-down" role="presentation" aria-hidden="true"></span></span> <ul data-dojo-type="mojo/widgets/AccessibleMenu" class="c-menuChild zin-lv3 small-meta nowrap bg-white" tabindex="-1" role="menu" aria-expanded="false" id="dijit__FocusMixin_1" lang="en" widgetid="dijit__FocusMixin_1"> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/dashboard/overview?id=32321">Overview</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/dashboard/social?id=32321">Social Profiles</a> </li> </ul> </li>  <li class="c-menuParent relative font-weight--bold  cursor-pointer" title="Manage contacts in this list" tabindex="0" role="menuitem" aria-haspopup="true" data-submenu="true"> <span class="v-menuParent">Manage contacts <span class="freddicon menu-down" role="presentation" aria-hidden="true"></span></span> <ul data-dojo-type="mojo/widgets/AccessibleMenu" class="c-menuChild zin-lv3 small-meta nowrap bg-white" tabindex="-1" role="menu" aria-expanded="false" id="dijit__FocusMixin_2" lang="en" widgetid="dijit__FocusMixin_2"> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/members?id=32321">View contacts</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/members/unsubscribe-form?id=32321">Unsubscribe addresses</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/dashboard/groups?id=32321">Groups</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/segments?id=32321">Segments</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/tags?id=32321">Tags</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/dashboard/imports?id=32321">Import history</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/exports?id=32321">List exports</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/contact-exports?id=32321">Contact exports</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/members/delete-all?id=32321">Delete all contacts</a> </li> </ul> </li>  <li class="c-menuParent relative font-weight--bold  cursor-pointer" title="Add an individual subscriber or import from a list or external application" tabindex="0" role="menuitem" aria-haspopup="true" data-submenu="true"> <span class="v-menuParent">Add contacts <span class="freddicon menu-down" role="presentation" aria-hidden="true"></span></span> <ul data-dojo-type="mojo/widgets/AccessibleMenu" class="c-menuChild zin-lv3 small-meta nowrap bg-white" tabindex="-1" role="menu" aria-expanded="false" id="dijit__FocusMixin_3" lang="en" widgetid="dijit__FocusMixin_3"> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/members/add?id=32321">Add a subscriber</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/members/import?id=32321">Import contacts</a> </li> </ul> </li>  <li class="c-menuParent relative font-weight--bold" title="Build/design your signup form, response emails, and more" tabindex="0" role="menuitem" aria-haspopup="false"> <a class="c-menuParent_link v-menuParent " href="https://us20.admin.mailchimp.com/lists/dashboard/signup-forms?id=32321" tabindex="-1">Signup forms</a> </li>  <li class="c-menuParent relative font-weight--bold  cursor-pointer" title="List settings" tabindex="0" role="menuitem" aria-haspopup="true" data-submenu="true"> <span class="v-menuParent">Settings <span class="freddicon menu-down" role="presentation" aria-hidden="true"></span></span> <ul data-dojo-type="mojo/widgets/AccessibleMenu" class="c-menuChild zin-lv3 small-meta nowrap bg-white" tabindex="-1" role="menu" aria-expanded="false" id="dijit__FocusMixin_4" lang="en" widgetid="dijit__FocusMixin_4"> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/settings/defaults?id=32321">List name and defaults</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/settings/publicity-settings?id=32321">Publicity settings</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/settings/merge-tags?id=32321">List fields and *|MERGE|* tags</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/settings/contact?id=32321">Required email footer content</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/tools/import-email?id=32321">Email Beamer</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/tools/analytics?id=32321">Google Analytics on archive/list pages</a> </li> <li class="c-menuItem" role="menuitem" tabindex="-1"> <a class="c-menuItem_link " href="https://us20.admin.mailchimp.com/lists/tools/webhooks?id=32321">Webhooks</a> </li> </ul> </li>  <li class="c-menuParent relative font-weight--bold" title="Search within this list" tabindex="0" role="menuitem" aria-haspopup="false"> <a data-menubar-item="searchLink" mc:track="local-nav search" class="c-menuParent_link v-menuParent lists-search nolink" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" tabindex="-1"> <span class="freddicon search !margin--lv0" role="presentation" aria-hidden="true"></span> </a> </li> </ul> </nav> </div>  </div> </div> <div id="list-content" class="clear"> <div class="lastUnit size1of1 section"> <h2>Embedded forms</h2> <ul class="local-nav local-tabs" id="embedded-form-selection"> <li class="current" id="classic"><a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" onclick="changeFormType(&#39;classic&#39;); return false;">Classic</a></li> <li id="slim" class=""><a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" onclick="changeFormType(&#39;slim&#39;); return false;">Condensed</a></li> <li id="horizontal-slim" class=""><a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" onclick="changeFormType(&#39;horizontal-slim&#39;); return false;">Horizontal</a></li> <li id="naked"><a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" onclick="changeFormType(&#39;naked&#39;); return false;">Unstyled</a></li> <li id="advanced" class=""><a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" onclick="changeFormType(&#39;advanced&#39;); return false;">Advanced</a></li> </ul> </div> <div id="form-builder" class="classic line" style=""> <div id="form-options" class="unit size1of3 section"> <div> <p class="show-classic">The <strong>Classic Form</strong> includes all visible fields for this list.</p> <p class="show-slim">The <strong>Condensed Form</strong> collects only email address. Great for small spaces.</p> <p class="show-naked">The <strong>Unstyled Form</strong> provides only the raw HTML with no CSS or JavaScript.</p> </div> <h3>Form options</h3> <form id="embed-form-settings" method="POST" novalidate="novalidate"> <input type="hidden" aria-hidden="true" name="form_type" id="form_type" value="classic" class="av-hidden"> <input type="hidden" aria-hidden="true" name="form_style" id="form_style" value="default" class="av-hidden"> <div class="option-group section"> <label for="include-form-label" class="checkbox !margin-bottom--lv0"> <div class="dijit dijitReset dijitInline dijitCheckBox av-checkbox dijitCheckBoxChecked dijitChecked" role="presentation" lang="en" widgetid="include-form-label"><input name="show_label" type="checkbox" role="checkbox" aria-checked="true" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" value="yes" id="include-form-label" checked="checked" style="user-select: none;"></div>Include form title </label> <div class="!margin-left-right--lv0 margin--lv1"><input class="!margin--lv0 av-text" type="text" name="form_label" value="Subscribe to our mailing list" id="form_label"></div> </div> <div class="option-group hide-slim hide-horizontal-slim section"> <label for="only_required_fields" class="checkbox !margin-bottom--lv2"> <div class="dijit dijitReset dijitInline dijitRadio av-radio" role="presentation" lang="en" widgetid="only_required_fields"><input name="fields" type="radio" role="radio" aria-checked="false" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" value="req" id="only_required_fields" style="user-select: none;"></div>Show only required fields <div class="checkbox-description small-meta fwb">Edit required fields in <a href="https://us20.admin.mailchimp.com/lists/designer/?id=32321">the form builder</a>.</div> </label> <label for="all_fields"><div class="dijit dijitReset dijitInline dijitRadio av-radio dijitRadioChecked dijitChecked" role="presentation" lang="en" widgetid="all_fields"><input name="fields" type="radio" role="radio" aria-checked="true" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" value="all" id="all_fields" checked="checked" style="user-select: none;"></div>Show all fields</label> </div> <div class="section hide-slim hide-horizontal-slim"> <label for="include-groups"><div class="dijit dijitReset dijitInline dijitCheckBox av-checkbox dijitCheckBoxChecked dijitChecked" role="presentation" lang="en" widgetid="include-groups"><input name="include_groups" type="checkbox" role="checkbox" aria-checked="true" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" value="yes" id="include-groups" checked="checked" style="user-select: none;"></div>Show interest group fields</label> <label for="required-fields"><div class="dijit dijitReset dijitInline dijitCheckBox av-checkbox dijitCheckBoxChecked dijitChecked" role="presentation" lang="en" widgetid="required-fields"><input name="show_req_notice" type="checkbox" role="checkbox" aria-checked="true" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" value="yes" id="required-fields" checked="checked" style="user-select: none;"></div>Show required field indicators</label> <div> <label for="include-formats" class="checkbox"> <div class="dijit dijitReset dijitInline dijitCheckBox av-checkbox dijitCheckBoxChecked dijitChecked" role="presentation" lang="en" widgetid="include-formats"><input name="include_formats" type="checkbox" role="checkbox" aria-checked="true" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" value="yes" id="include-formats" checked="checked" style="user-select: none;"></div>Show format options <div class="checkbox-description">HTML, plain-text, mobile options.</div> </label> </div> </div>  <div class="clear hide-horizontal-slim"> <strong>GDPR Fields</strong> <span class="badge">Disabled</span> <p>Manage GDPR fields in <a href="https://us20.admin.mailchimp.com/lists/settings/defaults?id=32321">List Name and Defaults</a>.</p> </div> <div class="hide-horizontal-slim"> <label for="width"><span class="dim-el fwn">Optional:</span> Form width</label> <div class="field-wrapper" style="white-space:normal;"> <input type="number" name="width" value="" id="width" class="av-number"> <div class="field-help always-show">Form width in pixels. Leave blank to let the form take on the width of the area where it’s placed.</div> </div> </div> <h4 class="hide-slim hide-horizontal-slim">Enhance your form</h4> <ul> <li class="option-group hide-slim hide-horizontal-slim hide-naked"> <label for="enh_nojs" class="checkbox"> <div class="dijit dijitReset dijitInline dijitCheckBox av-checkbox" role="presentation" lang="en" widgetid="enh_nojs"><input name="enh_nojs" type="checkbox" role="checkbox" aria-checked="false" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" value="yes" id="enh_nojs" style="user-select: none;"></div>Disable all JavaScript <div class="checkbox-description"> This disables field validation, and inline form submission. The form will submit to your hosted subscribe form. </div> </label> </li> <li class="option-group hide-slim hide-horizontal-slim"> <label for="archive" class="checkbox"> <div class="dijit dijitReset dijitInline dijitCheckBox av-checkbox" role="presentation" lang="en" widgetid="archive"><input name="enh_archive" type="checkbox" role="checkbox" aria-checked="false" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" value="yes" id="archive" style="user-select: none;"></div>Include archive link <div class="checkbox-description"> The archive link will point users to a page listing your recent campaigns so they can get a look at what type of content you'll be sending them. </div> </label> </li> <li class="option-group hide-slim hide-horizontal-slim"> <label for="monkeyrewards" class="clear float-left !margin-bottom--lv4"> <div class="dijit dijitReset dijitInline dijitCheckBox av-checkbox" role="presentation" lang="en" widgetid="monkeyrewards"><input name="enh_rewards" type="checkbox" role="checkbox" aria-checked="false" class="dijitReset dijitCheckBoxInput" data-dojo-attach-point="focusNode" data-dojo-attach-event="ondijitclick:_onClick" tabindex="0" value="yes" id="monkeyrewards" style="user-select: none;"></div>Include <a mc:track="" href="https://mailchimp.com/help/add-or-remove-monkeyrewards/" target="_blank" rel="noopener noreferrer">MonkeyRewards link</a> </label> </li> </ul> <input type="hidden" name="__csrf_token" id="" value="7cad51b6b0e265b2b3c079e325d688bd92648c19" class="av-hidden"></form> </div> <div class="lastUnit size2of3"> <div id="preview-form" style="display: block;">   <h3>Preview</h3> <iframe id="embed-form-display" frameborder="0" class="border-radius--lv2 section" src="./Embedded Form Code _ Mailchimp_files/saved_resource(1).html"></iframe> <div id="embed-code-display" class="section"> <h3>Copy/paste onto your site</h3> <form id="typepad-form" class="relative" action="https://www.typepad.com/t/app/weblog/design/widgets" method="post" novalidate="novalidate"> <input type="hidden" aria-hidden="true" name="service_key" value="52616e646f6d4956be49c2fbf4291f4806647c834740ed04635b8876ac4d89b21f781a1c50f1109e" class="av-hidden" id="service_key"> <input type="hidden" aria-hidden="true" name="service_name" value="MailChimp" class="av-hidden" id="service_name"> <input type="hidden" aria-hidden="true" name="service_url" value="http://www.mailchimp.com/" class="av-hidden" id="service_url"> <input type="hidden" aria-hidden="true" name="long_name" value="MailChimp Signup Form" class="av-hidden" id="long_name"> <input type="hidden" aria-hidden="true" name="short_name" value="mailchimp_signup" class="av-hidden" id="short_name"> <textarea name="content" class="full-width" style="height:200px" id="embed-form-code" onclick="mojo.utils.selectAll(&#39;embed-form-code&#39;)"></textarea> <input type="hidden" aria-hidden="true" name="return_url" value="http://us20.admin.mailchimp.com/lists/integration/embeddedcode/?id=32321&amp;generate=1" class="av-hidden" id="return_url"> </form> </div> </div> </div> </div> <div id="advanced-forms" style="display: none;"> <div class="lastUnit size1of1 section"> <h3>Custom CSS</h3> <p class="section"> We've written a reference guide for styling your signup form embed code.<br> <a href="https://mailchimp.com/help/css-hooks-for-customizing-forms/" target="_blank" rel="noopener noreferrer">Learn more</a> </p> <h3>Hidden fields</h3> <p class="section"> Have list fields that you don't want subscribers to see or edit? You can hide them.<br> <a href="https://mailchimp.com/help/hide-segmentation-fields-in-a-signup-form/" target="_blank" rel="noopener noreferrer">Learn more</a> </p> <h3>API</h3> <p class="section"> Create completely custom signup forms on your site by connecting to our API.<br> <a href="http://developer.mailchimp.com/documentation/mailchimp/guides/manage-subscribers-with-the-mailchimp-api/" target="_blank" rel="noopener noreferrer">Learn more</a> </p> </div> </div>  <mc:flag>  </mc:flag> </div> </div>  <div>    </div> </div> </div><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.7392622998276914"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.163137068524158" width="0" height="0" alt="" src="./Embedded Form Code _ Mailchimp_files/0"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon0.2632186962386569" width="0" height="0" alt="" src="./Embedded Form Code _ Mailchimp_files/0(1)"></div>       <script type="application/javascript" id="ywa-1551665914439-241875" class="ywa-10000" defer="" src="./Embedded Form Code _ Mailchimp_files/sp.pl.download"></script>
+<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-782980185");</script>
+<script type="text/javascript">
+    var xhr_open = XMLHttpRequest.prototype.open;
+    XMLHttpRequest.prototype.open = function(method, url, async, user, password) {
+        xhr_open.call(this, method, url, async, user, password);
+        if (url.match(/^\/(?!\/)+/)) {
+            this.setRequestHeader('X-CSRF-Token', '7cad51b6b0e265b2b3c079e325d688bd92648c19');
+        }
+    }
+</script><script src="./Embedded Form Code _ Mailchimp_files/dojo.js.download" data-dojo-config="parseOnLoad: true, usePlainJson: true, isDebug: false"></script><script src="./Embedded Form Code _ Mailchimp_files/mccommon.js.download"></script><script type="text/javascript">
+    // The following dojo require places mojo.utils on the window.
+    // Many html files and javascript views rely on this property existing.
+    // Search for "mojo.utils" in any *.html files, and you'll find the hundreds of cases.
+    // Leaving this for historical reasons, but eventually migrating those usages would be good.
+    dojo.require("mojo.utils");
+
+    require(["mojo/widgets/Dialog"]);
+
+    // Leaving it globally since we used it around
+    window.rootUrl = '/';
+
+    require([
+        "dojo/query",
+    ], function (query) {
+        // captcha takes a global function to callback
+        window.captchaSuccess = function () {
+            query('[data-mc-el="captchaAutoSubmit"]')[0].submit();
+        };
+    });
+
+    require([
+        "dojo/_base/lang",
+        "mojo/user",
+        "mojo/context",
+    ], function (lang, user, context) {
+        // Add defaults to the actual modules.
+
+        lang.mixin(context, {
+            'rootUrl': '/',
+
+            'proxyBaseUrl': "https:\/\/d2q0qd5iz04n9u.cloudfront.net\/_ssl\/proxy.php",
+
+            'listManageDomain': "vincentp.us20.list-manage.com",
+
+            'pusherKey': "74d7188a67461f12439a",
+
+            'cdnImagesDomain': "cdn-images.mailchimp.com",
+
+            'galleryDomain': "gallery.mailchimp.com",
+
+            'avestaEnvironment': "prod",
+
+            "imageEditorUrl": "https:\/\/dme0ih8comzn4.cloudfront.net\/imaging\/v3\/editor.js",
+
+            "imageEditorKey": "0e6dcf36c54b4faf965e45884a3dcf30",
+
+            "solvvyUrl": "\/js\/vendor\/solvvy\/solvvy_v3.js",
+
+            "enabledFlags": ["mobile.android.5.5.notification_settings_mvvm","mobile.android.5.3.automated_postcard_phase_2","mobile.iphone.5.3.logo_manager","mobile.android.5.3.logo_manager","mobile.android.5.3.new_campaigns_tab","mobile.iphone.5.2.manage_tags","mobile.android.5.3.manage_tags","mobile.android.5.2.new_homepage","mobile.android.5.2.one_click_welcome_automation","mobile.iphone.5.2.one_click_welcome_automation","mobile.iphone.5.1.automated_postcards","mobile.android.5.1.automated_postcards","mobile.iphone.5.1.domain_verification","mobile.android.5.1.domain_verification","mobile.iphone.5.0.send_to_tags","mobile.iphone.5.0.tags_on_contact_profile","mobile.iphone.5.0.landing_page_subscription_notification","mobile.android.5.0.send_to_tags","mobile.android.5.0.tags_on_contact_profile","mobile.android.5.0.landing_page_subscription_notification","mobile.android.5.1.landing_page_subscription_notification","mobile.android.5.2.landing_page_subscription_notification","mobile.iphone.5.0.postcard_viewing","mobile.android.5.0.postcard_viewing","mobile.iphone.4.9.facebook_ad_editing","mobile.iphone.4.8.postcard","mobile.android.4.8.postcard","mobile.android.4.7.saved_templates","mobile.iphone.4.7.saved_templates","mobile.iphone.4.7.product_retargeting","mobile.android.4.7.product_retargeting","mobile.iphone.4.6.abandoned_cart","mobile.android.4.6.abandoned_cart","compliance_delay_automation_recipient_threshold","compliance_cross_account_gallery_policy","compliance_mcuribl_alternate_unroller","compliance_test_new_content_cluster_index","compliance_partner_api_ehawk_talon_utma","compliance_use_force_content_review_flag","user_template_id_fix","delivery_dkim_lowercase_i_tag","facebook_pages_bypass_page_admin","solvvy_v3","solvvy_preload","adyen_turnoff","multichannel.create_button_top_navigation","multichannel.social_refresh_stats","gdpr.require_fields","gdpr.toggle_predicted_demographics","automation_billing_restart_flow","automation_billing_restart_flow_backfill","automation_remove_subscribers_from_queue","logging_migrate_avesta_log","ignore_egp_spam_trap","support_knob_additions","facebook_api_upgrade","click_bounce.log","mcadmin_okta","ads_fb_retargeting","validate_login_user_by_username","refactor_high_vol_send","bcrypt","save_last_api_activity","enable_automation_stats_outreaches","mandrill_signup_permitted","remove_sms_verification","speed_up_ecomm_category_query","subscribe_post_throttler_logging","mcadmin_delete_store_button","save_customer_within_list_management","landing_pages.signup_styles","landing_pages.branded_domain_ui","landing_pages.payment_block","start_with_mailchimp.remove_sections","start_with_mailchimp.subsciber_data","es_segment_test_count","single_email_welcome_automation","add_has_logo_merge_tag_to_api","partner_platform_api_utma","partner_platform_api_root_ping","shopify_marketing_event_outreach","shopify_marketing_event_ad","landing_page_connected_site","stats_social.create_temp_innodb","googleads_use_latest_version","pylp_ad_reporting","fb_ad_gifs","crm.audience_tab_redirect_experiment","crm.audience_settings_access","timewarp_query","fb_pixel_creation","facebook.ads.publishing_enabled","retry_login_cacheclient","sites.enforce_mcjs_tos","sites.tos_acceptance_modal","sites.tos_feature_pauses","eventbrite_affiliate_links","ecommerce_transactional_opt_in","global_list_switcher_use_opt_out_flag","new_location_update_job","segmentation.bool_filter_query_product_ids","enable_pfree_chat_support","landing_pages.templates","gpaid.usabilla_survey_cookie","sites.store_syncing","product_picker_query","ads.remove_page_roles","automation_tee_logs_to_kibana","new_productrec_getforeignids","paypal_slab_removal","ga_reports_fix","sql_context_injection","landing_pages.square_connected_site","payments.use_no_reply_for_billing_at_email_address","landing_pages.billing_editor","dkim_options","list_import_group_assignments","gdpr.link_tracking","remove_login_flashblock","front_end_rum","landing_pages.thumbnail_upload_job","automations.last_paused_date","mc.lock_waited","billing_replace_deprecated","text_filter_html_removal","get_content_from_url_guzzle","oauth2_controller_post_action_guzzle","plums.mobile_app_compact_layout","plums.internal_entries","mcmta_client_guzzle","email.promo_cards","pusher_sdk_update","email.replicate_encoding_fix","empty_inbound_email","new_uk_eu_vat_id"],
+        });
+
+                lang.mixin(user, {
+            '__csrfToken': "7cad51b6b0e265b2b3c079e325d688bd92648c19",
+
+            'role': "owner",
+
+            'type': "Free Trial",
+
+            'userId': 112737042,
+
+            'loginId': 121274446,
+
+            'email': "prawiravincent98@gmail.com",
+
+            'settings': {
+                'pageSize': 25,
+                'fileManagerShowGrid': false            },
+
+                            'avatarUrl': "https:\/\/secure.gravatar.com\/avatar\/08eb2532a04e1416aaac9facc4a18857.jpg?s=300&d=https%3A%2F%2Fcdn-images.mailchimp.com%2Ficons%2Fletter-avatars%2Fv.png",
+            
+            'pro': false,
+
+            'pro_import_complete': false,
+
+            'flags': ["mobile.android.5.5.notification_settings_mvvm","mobile.android.5.3.automated_postcard_phase_2","mobile.iphone.5.3.logo_manager","mobile.android.5.3.logo_manager","mobile.android.5.3.new_campaigns_tab","mobile.iphone.5.2.manage_tags","mobile.android.5.3.manage_tags","mobile.android.5.2.new_homepage","mobile.android.5.2.one_click_welcome_automation","mobile.iphone.5.2.one_click_welcome_automation","mobile.iphone.5.1.automated_postcards","mobile.android.5.1.automated_postcards","mobile.iphone.5.1.domain_verification","mobile.android.5.1.domain_verification","mobile.iphone.5.0.send_to_tags","mobile.iphone.5.0.tags_on_contact_profile","mobile.iphone.5.0.landing_page_subscription_notification","mobile.android.5.0.send_to_tags","mobile.android.5.0.tags_on_contact_profile","mobile.android.5.0.landing_page_subscription_notification","mobile.android.5.1.landing_page_subscription_notification","mobile.android.5.2.landing_page_subscription_notification","mobile.iphone.5.0.postcard_viewing","mobile.android.5.0.postcard_viewing","mobile.iphone.4.9.facebook_ad_editing","mobile.iphone.4.8.postcard","mobile.android.4.8.postcard","mobile.android.4.7.saved_templates","mobile.iphone.4.7.saved_templates","mobile.iphone.4.7.product_retargeting","mobile.android.4.7.product_retargeting","mobile.iphone.4.6.abandoned_cart","mobile.android.4.6.abandoned_cart","compliance_delay_automation_recipient_threshold","compliance_cross_account_gallery_policy","compliance_mcuribl_alternate_unroller","compliance_test_new_content_cluster_index","compliance_partner_api_ehawk_talon_utma","compliance_use_force_content_review_flag","user_template_id_fix","delivery_dkim_lowercase_i_tag","facebook_pages_bypass_page_admin","solvvy_v3","solvvy_preload","adyen_turnoff","multichannel.create_button_top_navigation","multichannel.social_refresh_stats","gdpr.require_fields","gdpr.toggle_predicted_demographics","automation_billing_restart_flow","automation_billing_restart_flow_backfill","automation_remove_subscribers_from_queue","logging_migrate_avesta_log","ignore_egp_spam_trap","support_knob_additions","facebook_api_upgrade","click_bounce.log","mcadmin_okta","ads_fb_retargeting","refactor_high_vol_send","bcrypt","save_last_api_activity","enable_automation_stats_outreaches","mandrill_signup_permitted","remove_sms_verification","speed_up_ecomm_category_query","subscribe_post_throttler_logging","mcadmin_delete_store_button","save_customer_within_list_management","landing_pages.signup_styles","landing_pages.branded_domain_ui","landing_pages.payment_block","start_with_mailchimp.remove_sections","start_with_mailchimp.subsciber_data","single_email_welcome_automation","add_has_logo_merge_tag_to_api","partner_platform_api_utma","partner_platform_api_root_ping","shopify_marketing_event_outreach","shopify_marketing_event_ad","landing_page_connected_site","stats_social.create_temp_innodb","googleads_use_latest_version","pylp_ad_reporting","fb_ad_gifs","crm.audience_tab_redirect_experiment","crm.audience_settings_access","timewarp_query","fb_pixel_creation","facebook.ads.publishing_enabled","retry_login_cacheclient","sites.enforce_mcjs_tos","sites.tos_acceptance_modal","sites.tos_feature_pauses","eventbrite_affiliate_links","ecommerce_transactional_opt_in","global_list_switcher_use_opt_out_flag","new_location_update_job","segmentation.bool_filter_query_product_ids","enable_pfree_chat_support","landing_pages.templates","gpaid.usabilla_survey_cookie","sites.store_syncing","product_picker_query","ads.remove_page_roles","automation_tee_logs_to_kibana","new_productrec_getforeignids","paypal_slab_removal","ga_reports_fix","sql_context_injection","landing_pages.square_connected_site","payments.use_no_reply_for_billing_at_email_address","landing_pages.billing_editor","dkim_options","list_import_group_assignments","gdpr.link_tracking","autoloader_spy_enabled","remove_login_flashblock","front_end_rum","landing_pages.thumbnail_upload_job","automations.last_paused_date","mc.lock_waited","billing_replace_deprecated","slack_client_guzzle","text_filter_html_removal","get_content_from_url_guzzle","oauth2_controller_post_action_guzzle","plums.mobile_app_compact_layout","plums.internal_entries","mcmta_client_guzzle","email.promo_cards","pusher_sdk_update","email.replicate_encoding_fix","empty_inbound_email","new_uk_eu_vat_id"] || {},
+
+            'policy': [],
+
+            'userLevel': "free",
+
+            'isAnyEcomm': true,
+
+            'hasPaid': false,
+
+            'currencySymbol': "$",
+
+            'currencyCode': "USD",
+
+            'currencyLocale': "en-US",
+
+            'timezoneLabel': "Eastern Time",
+
+            'timezoneOffset': -5,
+
+            'hasVerifiedCustomDomain': false,
+
+            'isActivelyPaying': false,
+
+            'isActivelyPayingEachMonth': false,
+
+            'isBrandedBundleEnabled': true,
+
+            'isBrandedBundleSubscriber': false,
+
+            'isCurrencySymbolBehindAmount': false,
+
+            'mustTrackLinks': true,
+
+            'isGoalAvailable': false,
+
+            'isGoalEnabled': false,
+
+            'canSend': true,
+
+            'freeLimit': 2000,
+
+            'whyNotSend': "There are some issues which might impact your ability to send.  <a class=\"nowrap\" href=\"https:\/\/us20.admin.mailchimp.com\/account#issues\">Learn more about your account status<\/a>.",
+
+            'whyNotSendTitle': "Sending Disabled",
+
+            'isPaused': false,
+
+            'sentToday': 0,
+
+            'isLimitedTrial': true,
+
+            'canSendFree': true,
+
+            'isPayAsYouGo': false,
+
+            'brandLogoUrl': "https:\/\/cdn-images.mailchimp.com\/template_images\/gallery\/logo@2x.png",
+
+            'isND': false,
+
+            'isBootstrapped': true,
+
+            'appVersion': "1.1.18346f1c6ece9889ca88b4f4cded3f3d89d07a70b",
+
+            'dataExportsAllowed': true,
+
+        });
+        
+    });
+        require([
+        "vendor/bugsnag/bugsnag",
+        "mojo/user",
+    ], function (bugsnag, user) {
+        bugsnag.endpoint = "https:\/\/bugsnag-notify.rsglab.com\/js";
+        bugsnag.apiKey = "29f7c1fcbc19f93274b6fae7d4ab0aa1";
+        bugsnag.autoNotify = true;
+        bugsnag.user = {
+            id: user.userId,
+            type: user.type,
+        };
+        bugsnag.appVersion = user.appVersion;
+    });
+
+    require([
+        "dojo/Deferred",
+        "vendor/bugsnag/bugsnag",
+    ], function (Deferred, bugsnag) {
+        Deferred.instrumentRejected = function (error, handled, rejection, deferred) {
+            if (handled === true) {
+                return;
+            }
+
+            if (typeof error === "string") {
+                bugsnag.notify(error);
+            } else if (error instanceof Error) {
+                bugsnag.notifyException(error);
+            } else {
+                bugsnag.notify("UnhandledDeferredRejection", error);
+            }
+        };
+    });
+    </script><script type="text/javascript">
+    require(["mojo/rum"], function (rum) {
+        rum("hmac.239de53bf091f779c2cc0a373060816a0dce7d9337ef4f95434f578033a36183.lists-integration-embeddedcode")
+    });
+</script><script type="text/javascript">
+    require([
+        "mojo/widgets/Notifications",
+        "mojo/keep-alive"
+    ]);
+</script><script type="text/javascript" src="./Embedded Form Code _ Mailchimp_files/swfobject.js.download"></script><script type="text/javascript">
+        require([
+            "dojo/query",
+            "dojo/dom-class",
+            "dojo/_base/xhr",
+            "dojo/window",
+
+            // custom libs which perform work on dom ready
+            "mojo/touch/no-delay",
+            "mojo/app/common/sticky-hoverlist",
+            "dojo/domReady!"
+        ], function(query, domClass, xhr, win){
+        });
+
+    </script><script type="text/javascript">
+    var reauth = {
+        url: '/login/reauthenticate?username=Riffeur&user_id=112737042',
+        rememberMe : false    };
+
+    dojo.require('mojo.ReauthDialog');
+
+    // Override dojo's xhr to handle 403 status
+    (function(){
+        var oldXHR = dojo.xhr;
+        dojo.xhr = function() {
+            return oldXHR.apply(dojo, arguments).addErrback(function(err) {
+                switch(err.xhr.status) {
+                    case 403:
+                        window.top.mojo.ReauthDialog.show();
+                        break;
+                }
+            });
+        };
+    })();
+</script><script type="text/javascript">
+    // Handle 403 errors when making ajax calls through dojo/request which is the newer module.
+    require([
+        "dojo/request",
+        "dojo/request/notify"
+    ], function(request, notify) {
+        notify("error", function( error ) {
+            switch(error.response.status) {
+                case 403:
+                    window.top.mojo.ReauthDialog.show();
+                    break;
+            }
+        });
+    });
+</script><script type="text/javascript">
+    (function () {
+        function getCookie(check_name) {
+            var a_all_cookies = document.cookie.split(';');
+            var a_temp_cookie = '';
+            var cookie_name = '';
+            var cookie_value = '';
+            var b_cookie_found = false;
+
+            for (i = 0; i < a_all_cookies.length; i++) {
+                a_temp_cookie = a_all_cookies[i].split('=');
+                cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, '');
+                if (cookie_name === check_name) {
+                    b_cookie_found = true;
+                    if (a_temp_cookie.length > 1) {
+                        cookie_value = unescape(a_temp_cookie[1].replace(/^\s+|\s+$/g, ''));
+                    }
+                    return cookie_value;
+                }
+                a_temp_cookie = null;
+                cookie_name = '';
+            }
+
+            if (!b_cookie_found) {
+                return null;
+            }
+        }
+        // Save tracking id and client id to a cookie so we can use them server side
+        setTimeout(function () {
+            if (!getCookie('_mcga')) {
+                ga(function (tracker) {
+                    var gaData = {
+                        tid: tracker.get('trackingId'),
+                        cid: tracker.get('clientId')
+                    };
+                    document.cookie = '_mcga=' + JSON.stringify(gaData) + ';path=/;domain=.mailchimp.com';
+                });
+            }
+        }, 1);
+    })();
+</script><script type="text/javascript">
+    dojo.addOnLoad(function() {
+        refreshForm();
+        dojo.connect(dojo.byId('embed-form-settings'), 'onchange', function(e) {
+            refreshForm();
+        });
+        dojo.connect(dojo.byId('include-form-label'), 'onchange', function(e) {
+            toggle('include-form-label','form_label');
+        });
+    });
+
+    function changeFormType(t){
+        //dojo.place("form-options", t, "last");
+        dojo.query("#embedded-form-selection li").removeClass("current");
+        dojo.query("#" + t).addClass("current");
+        dojo.byId('form_type').value = t;
+        dojo.byId('form-builder').setAttribute("class",t + " line");
+        var formStyle = "default";
+        if(t=="advanced"){
+            dojo.style('form-builder' , 'display', 'none');
+            dojo.style('advanced-forms' , 'display', '');
+        } else {
+            dojo.style('form-builder' , 'display', '');
+            dojo.style('advanced-forms' , 'display', 'none');
+            if(t=="naked"){ 
+                formStyle = "none";
+                dojo.byId('enh_nojs').checked = true;
+            }
+            dojo.byId('form_style').value=formStyle;
+            refreshForm();
+        }
+    }
+
+    function toggle(checkbox, field){
+        if (dojo.byId(checkbox).checked){
+            dojo.style( dojo.byId(field) , 'display', 'block');
+        } else {
+            dojo.style( dojo.byId(field) , 'display', 'none');
+        }
+    }
+    function refreshForm(){
+        var genURL = "/lists/integration/embeddedcode-gen";
+
+        if (dojo.byId('form_type').value=='slim'){
+            genURL = "/lists/integration/embeddedcode-slim-gen";
+        } else if (dojo.byId('form_type').value=='horizontal-slim'){
+            dojo.byId('form_style').value="horizontal_slim";
+            genURL = "/lists/integration/embeddedcode-slim-gen";
+        }
+        dojo.xhrPost({
+            'url': genURL,
+            'content': {'options': dojo.formToJson('embed-form-settings'), 'id': 32321 },
+            'sync': true,
+            'handleAs': 'text',
+            'load': dispForm
+        });
+    }
+    function dispForm(resp){
+        dojo.style( dojo.byId('preview-form'), 'display', 'block');
+        iframe = dojo.byId('embed-form-display');
+        dojo.byId('embed-form-code').value = resp;
+        if (iframe) {
+            var now = new Date();
+            var expires_date = new Date( now.getTime() - 36000 );
+            document.cookie = 'MCPopupClosed=no;expires=Thu, 01-Jan-1970 00:00:01 GMT;path=/';
+            var iframeDoc;
+            if (iframe.contentDocument) {
+                iframeDoc = iframe.contentDocument;
+            } else if (iframe.contentWindow) {
+                iframeDoc = iframe.contentWindow.document;
+            } else if (window.frames[iframe.name]) {
+                iframeDoc = window.frames[iframe.name].document;
+            }
+            if (iframeDoc) {
+                //hackity, hackity for IE
+                resp = resp.replace('\x3Cscript type=\"text/javascript\"\x3E', '\x3Cscript type=\"text/javascript\"\x3Etry{');
+                resp = resp.replace('function mce_success_cb', '}catch(e){}\nfunction mce_success_cb');
+                var f_head = '\x3Chtml\x3E\x3Chead\x3E\x3C/head\x3E';
+                var f_foot = '\x3C/html\x3E';
+                iframeDoc.open();
+                iframeDoc.write(f_head+resp+f_foot);
+                iframeDoc.close();
+            }
+        }//yay, standards!
+    }
+    </script><script type="text/javascript">
+    require([
+        "dojo/dom-attr",
+        "dojo/_base/window",
+        "dojo/domReady!"
+    ], function(domAttr, win){
+        domAttr.set(win.doc.documentElement, "lang", "en");
+    });
+</script> 
+<div class="dijitToasterClip" dojoattachpoint="clipNode" lang="en" id="toast" style="display: none;" widgetid="toast"><div class="dijitToasterContainer" dojoattachpoint="containerNode" dojoattachevent="onclick:onSelect" style="opacity: 1;"><div class="dijitToasterContent" dojoattachpoint="contentNode"></div></div></div><div class="dijitDialog" role="dialog" aria-labelledby="popup-win-blocked_title" lang="en" id="popup-win-blocked" style="display: none; position: absolute;" widgetid="popup-win-blocked">
+	<div data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="popup-win-blocked_title" role="heading" level="1">Pop-up Windows Are Blocked</span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent"> <div class="dijitDialogPaneContentArea"> <p>Looks like your browser is blocking pop-up windows.<br>Learn how to <a href="https://mailchimp.com/help/enable-pop-ups-in-your-browser/" class="info" target="_blank" rel="noopener noreferrer">enable them</a>.</p> </div> <div class="dijitDialogPaneActionBar"> <a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#" class="button p0" onclick="dijit.byId(&#39;popup-win-blocked&#39;).hide(); return false;" role="button">Close</a> </div> </div>
+	
+</div><div class="dijitDialog" role="dialog" aria-labelledby="mc-module-dialog_title" lang="en" id="mc-module-dialog" style="width: 620px; display: none; position: absolute;" widgetid="mc-module-dialog">
+	<div data-dojo-attach-point="titleBar" class="dijitDialogTitleBar">
+		<span data-dojo-attach-point="titleNode" class="dijitDialogTitle" id="mc-module-dialog_title" role="heading" level="1">Verify Domain</span>
+		<span data-dojo-attach-point="closeButtonNode" class="dijitDialogCloseIcon" data-dojo-attach-event="ondijitclick: onCancel" title="Cancel" role="button" tabindex="-1">
+			<span data-dojo-attach-point="closeText" class="closeText" title="Cancel">x</span>
+		</span>
+	</div>
+	<div data-dojo-attach-point="containerNode" class="dijitDialogPaneContent"></div>
+	
+</div><div class="front-door c-interstitial position--relative topsliderpane-base" style="display:none;" id="uniqName_6_0" widgetid="uniqName_6_0">
+    <div class="flex justify-content--center position--fixed top-bottom--0 left-right--0 background-color--underlay align-items--flex-start">
+        <div class="c-interstitial_popup c-interstitial_hybrid-height_container margin--lv8 bg-white overflow--hidden border-radius--lv1">
+            <div class="full-width textcolor zin-lv2 position--static selfclear border-bottom" data-dojo-attach-point="topBarActions">
+                <div class="flex flex-between">
+                    <ul class="linear-list small-meta selfclear float--left full-width flex align-items--center">
+                        <li class="noborder">
+                            <a href="javascript:" data-dojo-attach-point="backLink" class="c-interstitial_button nolink padding--lv4 invisible" tabindex="-1">
+                                <span class="freddicon arrow-left"></span>
+                            </a>
+                        </li>
+                        <li class="c-interstitial_search-container flex">
+                            <!-- Search/Filter Container -->
+                            <div data-dojo-attach-point="intentsSearchContainer" class="width--100 c-frontDoorSearch">
+                                <!-- Filtered Search Widget container -->
+                                <form class="c-autocomplete relative" autocomplete="off" id="dijit__WidgetsInTemplateMixin_28" widgetid="dijit__WidgetsInTemplateMixin_28">
+    <div id="dijit__TemplatedMixin_3" class="relative margin-bottom--lv0" widgetid="dijit__TemplatedMixin_3">
+    <div class="c-filteredSearch relative">
+        <span class="c-filteredSearch_icon freddicon search absolute dim3"></span>
+        <label for="filtered-input-dijit__TemplatedMixin_3" class="v-visuallyHidden">Search our available campaign types</label>
+        <input id="filtered-input-dijit__TemplatedMixin_3" type="search" name="filtered-search" data-dojo-attach-point="filteredInput" placeholder="Search our available campaign types" class="!margin-bottom--lv0">
+        <img class="c-filteredSearch_clear absolute hide" data-dojo-attach-point="filteredClear" src="./Embedded Form Code _ Mailchimp_files/clear-input-icon.svg" width="16" height="16" role="button">
+    </div>
+</div>
+    <div data-dojo-attach-point="node_autoCompleteResults" class="c-autocomplete_suggestions position--absolute left--0 zin-lv1 bg-white border-gray hide full-width"><div class="c-autocomplete_divider small-meta padding--lv2 !padding-left--lv3 padding-bottom--lv1 font-weight--bold">Try searching for</div><a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#0" class="c-autocomplete_suggestion block full-width padding--lv3 padding-bottom--lv2 padding-top--lv2 textcolor font-weight--bold normal-meta">
+            <span class="freddicon hide c-autocomplete_suggestion_icon padding-right--lv2"></span> Featured campaigns
+            <span class="c-autocomplete_suggestion_prompt float-right small-meta font-weight--normal hide">Press <strong>Enter</strong></span>
+            <span class="c-autocomplete_suggestion_prompt float-right small-meta font-weight--normal hide">undefined</span>
+        </a><a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#0" class="c-autocomplete_suggestion block full-width padding--lv3 padding-bottom--lv2 padding-top--lv2 textcolor font-weight--bold normal-meta">
+            <span class="freddicon hide c-autocomplete_suggestion_icon padding-right--lv2"></span> Automation campaigns
+            <span class="c-autocomplete_suggestion_prompt float-right small-meta font-weight--normal hide">Press <strong>Enter</strong></span>
+            <span class="c-autocomplete_suggestion_prompt float-right small-meta font-weight--normal hide">undefined</span>
+        </a><a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#0" class="c-autocomplete_suggestion block full-width padding--lv3 padding-bottom--lv2 padding-top--lv2 textcolor font-weight--bold normal-meta">
+            <span class="freddicon hide c-autocomplete_suggestion_icon padding-right--lv2"></span> Ad campaigns
+            <span class="c-autocomplete_suggestion_prompt float-right small-meta font-weight--normal hide">Press <strong>Enter</strong></span>
+            <span class="c-autocomplete_suggestion_prompt float-right small-meta font-weight--normal hide">undefined</span>
+        </a><a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#0" class="c-autocomplete_suggestion block full-width padding--lv3 padding-bottom--lv2 padding-top--lv2 textcolor font-weight--bold normal-meta">
+            <span class="freddicon hide c-autocomplete_suggestion_icon padding-right--lv2"></span> Welcome or education series
+            <span class="c-autocomplete_suggestion_prompt float-right small-meta font-weight--normal hide">Press <strong>Enter</strong></span>
+            <span class="c-autocomplete_suggestion_prompt float-right small-meta font-weight--normal hide">undefined</span>
+        </a></div>
+    <script type="text/template" data-dojo-attach-point="template_divider">
+        <div class="c-autocomplete_divider small-meta padding--lv2 !padding-left--lv3 padding-bottom--lv1 font-weight--bold">Try searching for</div>
+    </script>
+    <script type="text/template" data-dojo-attach-point="template_result">
+        <a href="#0" class="c-autocomplete_suggestion block full-width padding--lv3 padding-bottom--lv2 padding-top--lv2 textcolor font-weight--bold normal-meta">
+            <span class="freddicon {icon} c-autocomplete_suggestion_icon padding-right--lv2"></span> {label}
+            <span class="c-autocomplete_suggestion_prompt float-right small-meta font-weight--normal {promptClass}">Press <strong>Enter</strong></span>
+            <span class="c-autocomplete_suggestion_prompt float-right small-meta font-weight--normal {detailsClass}">{details}</span>
+        </a>                  
+    </script>
+    <script type="text/template" data-dojo-attach-point="template_iconImage">
+        <img class="c-autocomplete_suggestion_iconImage padding-right--lv2" src="{iconImage}" />
+    </script>
+</form>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="linear-list small-meta selfclear float--right">
+                        <li class="noborder">
+                            <a href="javascript:" data-dojo-attach-point="closeLink" class="c-interstitial_button nolink padding--lv4" tabindex="0">
+                                <span class="freddicon cross"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-dojo-attach-point="content" class="c-interstitial_hybrid-height_content position--static flex justify-content--center overflow--auto margin--lv0"><!-- Wrapper for intent cards -->
+<div class="width--100 white-space--nowrap">
+        <div data-dojo-attach-point="intentsIntroContainer" class="alignc vertical-align--top width--100 white-space--normal iosSafariMenuFix c-frontDoorIntro--leftAligned">
+            <ul class="c-frontDoorIntro_shortcut-container unit size1of3 alignl !padding-top--lv1 padding--lv0 border-right width--100@tablet">
+                <a data-event-category="Modal - Create Campaign" data-event-action="Clicked / Email" tabindex="0" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/emailCampaign" class="display--block">
+                    <li class="c-frontDoorIntro_shortcut--leftAligned position--relative margin--lv2 margin-top--lv0 margin-bottom--lv0 padding-bottom--lv1 padding-top--lv1 text-align--left">
+                        <img src="./Embedded Form Code _ Mailchimp_files/email_large.svg" class="c-frontDoorIntro_shortcutImage margin-top--lv0 margin--lv2" width="60px" height="30px">
+                        <div class="c-frontDoorIntro_shortcut-description">
+                            <p class="fwb margin--lv0">Email</p>
+                            <p class="c-frontDoorIntro_shortcutDescription padding-right--lv2">Design and send automated or regular emails to your contacts.</p>
+                        </div>
+                    </li>
+                </a>
+                <a data-event-category="Modal - Create Campaign" data-event-action="Clicked / Ad" tabindex="0" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/adCampaign" class="display--block">
+                    <li class="c-frontDoorIntro_shortcut--leftAligned position--relative margin--lv2 margin-top--lv0 margin-bottom--lv0 padding-bottom--lv1 padding-top--lv1 text-align--left">
+                        <img src="./Embedded Form Code _ Mailchimp_files/ads_large.svg" class="c-frontDoorIntro_shortcutImage margin-top--lv0 margin--lv2" width="60px" height="30px">
+                        <div class="c-frontDoorIntro_shortcut-description">
+                            <p class="fwb margin--lv0">Ad</p>
+                            <p class="c-frontDoorIntro_shortcutDescription padding-right--lv2">Create an ad for Facebook or Instagram or use Google’s network to retarget potential customers across the web.</p>
+                        </div>
+                    </li>
+                </a>
+                <a data-event-category="Modal - Create Campaign" data-event-action="Clicked / Landing Page" tabindex="0" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/page" class="display--block" data-dojo-attach-point="pageShortcut">
+                    <li class="c-frontDoorIntro_shortcut--leftAligned position--relative margin--lv2 margin-top--lv0 margin-bottom--lv0 padding-bottom--lv1 padding-top--lv1 text-align--left">
+                        <img src="./Embedded Form Code _ Mailchimp_files/landing_page_large.svg" class="c-frontDoorIntro_shortcutImage margin-top--lv0 margin--lv2" width="60px" height="30px">
+                        <div>
+                            <p class="fwb margin--lv0">Landing Page</p>
+                            <p class="c-frontDoorIntro_shortcutDescription padding-right--lv2">Create a landing page to collect new contacts, promote a product, or offer a discount.</p>
+                        </div>
+                    </li>
+                </a>
+                <a data-event-category="Modal - Create Campaign" data-event-action="Clicked / Postcard" tabindex="0" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/postcard" class="display--block" data-dojo-attach-point="postcardShortcut">
+                    <li class="c-frontDoorIntro_shortcut--leftAligned position--relative  margin--lv2 margin-top--lv0 margin-bottom--lv0 padding-bottom--lv1 padding-top--lv1 text-align--left">
+                        <img src="./Embedded Form Code _ Mailchimp_files/postcards_large.svg" class="c-frontDoorIntro_shortcutImage margin-top--lv0 margin--lv2" width="60px" height="30px">
+                        <div class="c-frontDoorIntro_shortcut-description">
+                            <p class="fwb margin--lv0 inline-block">Postcard</p>
+                            <p class="c-frontDoorIntro_shortcutDescription padding-right--lv2">Design and send printed postcards to reach your contacts around the world.</p>
+                        
+                    </div></li>
+                </a>
+                <a data-event-category="Modal - Create Campaign" data-event-action="Clicked / Signup Form" tabindex="0" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/form" class="display--block">
+                    <li class="c-frontDoorIntro_shortcut--leftAligned position--relative margin--lv2 margin-top--lv0 margin-bottom--lv0 padding-bottom--lv1 padding-top--lv1 text-align--left">
+                        <img src="./Embedded Form Code _ Mailchimp_files/forms_large.svg" class="c-frontDoorIntro_shortcutImage margin-top--lv0 margin--lv2" width="60px" height="30px">
+                        <div class="c-frontDoorIntro_shortcut-description">
+                            <p class="fwb margin--lv0 fwb">Signup form</p>
+                            <p class="c-frontDoorIntro_shortcutDescription padding-right--lv2">Add a pop-up or embedded form to your website to collect subscribers.</p>
+                        </div>
+                    </li>
+                </a>
+            </ul>
+    
+            <!-- Intro Explore -->
+            <div class="c-frontDoorIntro_exploreContainer unit size2of3 alignc !padding--lv0 noborder flex flex-direction--column justify-content--center width--100@tablet">    
+                <div class="c-frontDoorIntro_explorePromo relative hide-phone marketingHero" data-dojo-attach-point="exploreBillboard" id="dijit__TemplatedMixin_2" title="Grow your list with our new page templates" widgetid="dijit__TemplatedMixin_2">
+    <div class="absolute margin--lv6 text-left  max-width--50 padding-right--lv7">
+        <p class="fwb" style="font-size: 1.3rem; max-width: 550px;">Grow your list with our new page templates</p>
+        <p style="font-size: 1.3rem;">They have the style and functionality you need to create an eye-catching page.</p>
+        <a href="https://us20.admin.mailchimp.com/jump/create-campaign/landing-page" class="button c-frontDoorIntro_explore_button" style="font-size:1.1rem;" role="button" data-event-category="Modal - Create Campaign" data-event-action="Clicked / Explore Promo" data-event-label="Grow" your="" list="" page="" templates="" promo="">Try the Templates</a>
+    </div>
+    <img src="./Embedded Form Code _ Mailchimp_files/GrowListPageTemplates.jpg" class="!margin--lv0" alt="Grow" your="" list="" page="" templates="" promo="">
+</div><div data-dojo-attach-point="marketingHeroContainer"></div>
+                <div class="flex-grow-2 flex flex-direction--column justify-content--center">
+                        <p class="centered padding--lv5 margin-bottom--lv0">We can help you find and create the campaigns you need. <a data-event-category="Modal - Create Campaign" data-dojo-attach-point="exploreIntentsButton" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore">Let us guide you</a></p>
+                    </div>    
+            </div>
+    
+        </div>
+    
+        <!-- Intents search results containers -->
+        <div data-dojo-attach-point="intentsSearchResultsContainer" style="display: none" class="vertical-align--top width--100 border-bottom white-space--normal iosSafariMenuFix">
+            <div class="c-noDataBlock text-align--center border-gray border-radius--lv2 noborder" id="dijit__TemplatedMixin_1" widgetid="dijit__TemplatedMixin_1">
+    <div data-dojo-attach-point="containerNode">
+        <div class="c-noDataBlock_icon" style="background-image: url(/images/brand_assets/illos/art-empty-default-alt.png)" data-dojo-attach-point="noDataIcon"></div>
+        <h2 class="c-noDataBlock_title" data-dojo-attach-point="noDataTitle">Goose egg</h2>
+        <p class="c-noDataBlock_message" data-dojo-attach-point="noDataMessage">We couldn't find any campaigns that match <strong></strong>. Try broadening your search.</p>
+        <a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321" class="c-noDataBlock_action button p0 float--none hide" data-dojo-attach-point="noDataButton"></a>
+    
+            </div>
+</div>
+            <div class="c-blueprintCard_container_heading padding--lv8 hide" data-dojo-attach-point="resultsHeader">
+                <h2 class="margin-bottom--lv0 text-align--center">We found <span data-dojo-attach-point="intentsSearchCount"></span> results based on "<span data-dojo-attach-point="intentsSearchTerm"></span>"</h2>
+            </div>
+            <div>
+                <ul data-dojo-attach-point="intentSearchCards" class="c-blueprintCard_container flex flex-wrap--wrap justify-content--space-between centered margin-bottom--lv8"></ul>
+            </div>
+        </div>
+    
+        <!-- Intents Container -->
+        <div data-dojo-attach-point="intentsContainer" style="display: none;" class="vertical-align--top width--100 white-space--normal iosSafariMenuFix">
+            <div data-dojo-attach-point="pathwaysList"><div tabindex="0" class="c-frontDoorIntro_pathway border-bottom position--relative" title="Build your brand" id="build-your-brand" widgetid="build-your-brand">
+    <h3 data-dojo-attach-point="detailsSummary" class="c-blueprintCard_container_meta padding-top--lv6 padding-bottom--lv6 margin-bottom--lv0 disclosure-open">
+        <span class="c-blueprintCard_container_heading">Build your brand</span>
+        <span class="c-blueprintCard_container_count float--right normal-meta textcolor dim-el font-weight--normal">4 Campaigns</span>
+    </h3>
+    <div data-dojo-attach-point="detailsContent" class="padding-top--lv4">
+        <p class="c-blueprintCard_container_description textcolor normal-meta full-width">Ready to find your people? Spread the word and grow your list with these campaigns.</p>
+        <ul data-dojo-attach-point="list" class="c-blueprintCard_container flex flex-wrap--wrap centered"><li id="dijit__WidgetsInTemplateMixin_1" widgetid="dijit__WidgetsInTemplateMixin_1">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/buildBrandSocialAd">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;facebook&#39;" id="uniqName_5_0" widgetid="uniqName_5_0"><div class="c-channelIcon c-channelIcon--ad"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Find a new audience with ads</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Tell people about yourself and attract customers who aren't on your list – yet.</p>
+        <div class="c-blueprintCard--automation dim-el display--none" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_2" widgetid="dijit__WidgetsInTemplateMixin_2">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/sitePopup">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;signup_form_popup&#39;" id="uniqName_5_1" widgetid="uniqName_5_1"><div class="c-channelIcon c-channelIcon--site"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Collect subscribers with a pop-up form</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">While you have their attention, ask visitors to your website to join your mailing list.</p>
+        <div class="c-blueprintCard--automation dim-el display--none" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_3" widgetid="dijit__WidgetsInTemplateMixin_3">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/signupFormPage">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;landing_page&#39;" id="uniqName_5_2" widgetid="uniqName_5_2"><div class="c-channelIcon c-channelIcon--page"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Get list signups with a landing page</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Invite people to join your list using a giveaway or free download.</p>
+        <div class="c-blueprintCard--automation dim-el display--none" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_4" widgetid="dijit__WidgetsInTemplateMixin_4">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/promoteYourLandingPage">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;facebook&#39;" id="uniqName_5_3" widgetid="uniqName_5_3"><div class="c-channelIcon c-channelIcon--ad"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Promote your landing page with an ad</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Get more visits to your landing page with a prebuilt Facebook and Instagram ad.</p>
+        <div class="c-blueprintCard--automation dim-el display--none" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li></ul>
+    </div>
+</div><div tabindex="0" class="c-frontDoorIntro_pathway border-bottom position--relative" title="Connect with your contacts" id="connect-with-contacts" widgetid="connect-with-contacts">
+    <h3 data-dojo-attach-point="detailsSummary" class="c-blueprintCard_container_meta disclosure-closed padding-top--lv6 padding-bottom--lv6 margin-bottom--lv0">
+        <span class="c-blueprintCard_container_heading">Connect with your contacts</span>
+        <span class="c-blueprintCard_container_count float--right normal-meta textcolor dim-el font-weight--normal">7 Campaigns</span>
+    </h3>
+    <div data-dojo-attach-point="detailsContent" class="display--none padding-top--lv4">
+        <p class="c-blueprintCard_container_description textcolor normal-meta full-width">You've got their attention. Now's the time to tell your story and show off your products.</p>
+        <ul data-dojo-attach-point="list" class="c-blueprintCard_container flex flex-wrap--wrap centered"><li id="dijit__WidgetsInTemplateMixin_5" widgetid="dijit__WidgetsInTemplateMixin_5">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/addTag">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;automation&#39;" id="uniqName_5_4" widgetid="uniqName_5_4"><div class="c-channelIcon "></div></div>
+
+        <div class="fwb margin-bottom--lv1">Email your tagged contacts</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Send a targeted message when you add a tag to a contact.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_6" widgetid="dijit__WidgetsInTemplateMixin_6">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/welcome">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;welcome&#39;" id="uniqName_5_5" widgetid="uniqName_5_5"><div class="c-channelIcon "></div></div>
+
+        <div class="fwb margin-bottom--lv1">Welcome new subscribers</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Introduce yourself to people when they sign up for your list.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_7" widgetid="dijit__WidgetsInTemplateMixin_7">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/emailCampaign">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;regular&#39;" id="uniqName_5_6" widgetid="uniqName_5_6"><div class="c-channelIcon c-channelIcon--email"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Create an email</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Keep your contacts in the loop with any news or promotions you want to share.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_8" widgetid="dijit__WidgetsInTemplateMixin_8">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/birthday">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;automation&#39;" id="uniqName_5_7" widgetid="uniqName_5_7"><div class="c-channelIcon "></div></div>
+
+        <div class="fwb margin-bottom--lv1">Say 'happy birthday'</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Celebrate with an exclusive offer or cheerful message that sends based on the birthday field in your list.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_9" widgetid="dijit__WidgetsInTemplateMixin_9">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/rss">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;rss&#39;" id="uniqName_5_8" widgetid="uniqName_5_8"><div class="c-channelIcon c-channelIcon--email"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Share blog updates</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Help contacts keep up with your blog by sending new posts straight to their inboxes.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_10" widgetid="dijit__WidgetsInTemplateMixin_10">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/sitePopupThankYou">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;automation&#39;" id="uniqName_5_9" widgetid="uniqName_5_9"><div class="c-channelIcon "></div></div>
+
+        <div class="fwb margin-bottom--lv1">Thank pop-up form subscribers</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Send a warm welcome to people who join your list from a Mailchimp pop-up form.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_11" widgetid="dijit__WidgetsInTemplateMixin_11">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/sendAPostCard">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;postcard&#39;" id="uniqName_5_10" widgetid="uniqName_5_10"><div class="c-channelIcon c-channelIcon--postcard"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Send a postcard</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Say hi in real life with a printed postcard people can hold on to.</p>
+        <div class="c-blueprintCard--automation dim-el display--none" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li></ul>
+    </div>
+</div><div tabindex="0" class="c-frontDoorIntro_pathway border-bottom position--relative" title="Sell more stuff" id="sell-more-stuff" widgetid="sell-more-stuff">
+    <h3 data-dojo-attach-point="detailsSummary" class="c-blueprintCard_container_meta disclosure-closed padding-top--lv6 padding-bottom--lv6 margin-bottom--lv0">
+        <span class="c-blueprintCard_container_heading">Sell more stuff</span>
+        <span class="c-blueprintCard_container_count float--right normal-meta textcolor dim-el font-weight--normal">8 Campaigns</span>
+    </h3>
+    <div data-dojo-attach-point="detailsContent" class="display--none padding-top--lv4">
+        <p class="c-blueprintCard_container_description textcolor normal-meta full-width">There are lots of ways to encourage people to buy.</p>
+        <ul data-dojo-attach-point="list" class="c-blueprintCard_container flex flex-wrap--wrap centered"><li id="dijit__WidgetsInTemplateMixin_12" widgetid="dijit__WidgetsInTemplateMixin_12">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/contactsSocialAd">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;facebook&#39;" id="uniqName_5_11" widgetid="uniqName_5_11"><div class="c-channelIcon c-channelIcon--ad"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Target contacts with ads</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Go beyond email. Promote to a specific segment of your list on social media.</p>
+        <div class="c-blueprintCard--automation dim-el display--none" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_13" widgetid="dijit__WidgetsInTemplateMixin_13">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/remarketingAd">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;google&#39;" id="uniqName_5_12" widgetid="uniqName_5_12"><div class="c-channelIcon c-channelIcon--ad"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Retarget site visitors with Google ads</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Use Google’s huge ad network to remind people about the cool stuff they saw on your website.</p>
+        <div class="c-blueprintCard--automation dim-el display--none" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_14" widgetid="dijit__WidgetsInTemplateMixin_14">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/productRetargeting">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;abandoned_browse&#39;" id="uniqName_5_13" widgetid="uniqName_5_13"><div class="c-channelIcon "></div></div>
+
+        <div class="fwb margin-bottom--lv1">Retarget site visitors</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Email a reminder to people about the cool stuff they saw on your website.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_15" widgetid="dijit__WidgetsInTemplateMixin_15">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/abandonedCart">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;abandoned_cart&#39;" id="uniqName_5_14" widgetid="uniqName_5_14"><div class="c-channelIcon "></div></div>
+
+        <div class="fwb margin-bottom--lv1">Turn on an abandoned cart email</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Send a friendly reminder to people who leave your store without checking out.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_16" widgetid="dijit__WidgetsInTemplateMixin_16">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/orderNotification">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;transactional&#39;" id="uniqName_5_15" widgetid="uniqName_5_15"><div class="c-channelIcon c-channelIcon--email"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Enable order notifications</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Beautify your receipts and shipping updates, and add in some product recommendations while you’re at it.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_17" widgetid="dijit__WidgetsInTemplateMixin_17">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/purchaseFollowup">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;automation&#39;" id="uniqName_5_16" widgetid="uniqName_5_16"><div class="c-channelIcon "></div></div>
+
+        <div class="fwb margin-bottom--lv1">Follow up on purchases</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Ask customers to review a product they bought recently, or recommend other stuff they might like.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_18" widgetid="dijit__WidgetsInTemplateMixin_18">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/postcard">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;postcard&#39;" id="uniqName_5_17" widgetid="uniqName_5_17"><div class="c-channelIcon c-channelIcon--postcard"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Send a postcard</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Promote a sale or nudge people back to your store through the mail.</p>
+        <div class="c-blueprintCard--automation dim-el display--none" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_19" widgetid="dijit__WidgetsInTemplateMixin_19">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/productPage">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;landing_page&#39;" id="uniqName_5_18" widgetid="uniqName_5_18"><div class="c-channelIcon c-channelIcon--page"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Drive sales with a landing page</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Focus your shoppers' attention on a single product or collection.</p>
+        <div class="c-blueprintCard--automation dim-el display--none" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li></ul>
+    </div>
+</div><div tabindex="0" class="c-frontDoorIntro_pathway border-bottom position--relative" title="Boost customer loyalty" id="boost-customer-loyalty" widgetid="boost-customer-loyalty">
+    <h3 data-dojo-attach-point="detailsSummary" class="c-blueprintCard_container_meta disclosure-closed padding-top--lv6 padding-bottom--lv6 margin-bottom--lv0">
+        <span class="c-blueprintCard_container_heading">Boost customer loyalty</span>
+        <span class="c-blueprintCard_container_count float--right normal-meta textcolor dim-el font-weight--normal">5 Campaigns</span>
+    </h3>
+    <div data-dojo-attach-point="detailsContent" class="display--none padding-top--lv4">
+        <p class="c-blueprintCard_container_description textcolor normal-meta full-width">Take good care of your best customers, and they'll keep coming back.</p>
+        <ul data-dojo-attach-point="list" class="c-blueprintCard_container flex flex-wrap--wrap centered"><li id="dijit__WidgetsInTemplateMixin_20" widgetid="dijit__WidgetsInTemplateMixin_20">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/emailCampaign">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;regular&#39;" id="uniqName_5_19" widgetid="uniqName_5_19"><div class="c-channelIcon c-channelIcon--email"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Create an email</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Keep your contacts in the loop with any news or promotions you want to share.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_21" widgetid="dijit__WidgetsInTemplateMixin_21">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/firstTimeCustomers">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;automation&#39;" id="uniqName_5_20" widgetid="uniqName_5_20"><div class="c-channelIcon "></div></div>
+
+        <div class="fwb margin-bottom--lv1">Thank first-time customers</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Say thanks with some kind, heartfelt words (or kind, heartfelt GIFs) when someone makes their first purchase.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_22" widgetid="dijit__WidgetsInTemplateMixin_22">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/bestCustomers">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;automation&#39;" id="uniqName_5_21" widgetid="uniqName_5_21"><div class="c-channelIcon "></div></div>
+
+        <div class="fwb margin-bottom--lv1">Reward your best customers</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Share super-secret offers with customers once they’ve bought a couple things.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_23" widgetid="dijit__WidgetsInTemplateMixin_23">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/listActivity">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;automation&#39;" id="uniqName_5_22" widgetid="uniqName_5_22"><div class="c-channelIcon "></div></div>
+
+        <div class="fwb margin-bottom--lv1">Respond to subscriber updates</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Send an email when a subscriber joins a list group, or if their information changes.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_24" widgetid="dijit__WidgetsInTemplateMixin_24">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/sendAPostCardBoost">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;postcard&#39;" id="uniqName_5_23" widgetid="uniqName_5_23"><div class="c-channelIcon c-channelIcon--postcard"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Send a postcard</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Make your VIPs feel special with exclusive deals they get in the mail.</p>
+        <div class="c-blueprintCard--automation dim-el display--none" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li></ul>
+    </div>
+</div><div tabindex="0" class="c-frontDoorIntro_pathway border-bottom position--relative" title="Bring people back" id="bring-people-back" widgetid="bring-people-back">
+    <h3 data-dojo-attach-point="detailsSummary" class="c-blueprintCard_container_meta disclosure-closed padding-top--lv6 padding-bottom--lv6 margin-bottom--lv0">
+        <span class="c-blueprintCard_container_heading">Bring people back</span>
+        <span class="c-blueprintCard_container_count float--right normal-meta textcolor dim-el font-weight--normal">3 Campaigns</span>
+    </h3>
+    <div data-dojo-attach-point="detailsContent" class="display--none padding-top--lv4">
+        <p class="c-blueprintCard_container_description textcolor normal-meta full-width">Reconnect with customers who haven't visited your store in a while.</p>
+        <ul data-dojo-attach-point="list" class="c-blueprintCard_container flex flex-wrap--wrap centered"><li id="dijit__WidgetsInTemplateMixin_25" widgetid="dijit__WidgetsInTemplateMixin_25">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/remarketingAd">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;google&#39;" id="uniqName_5_24" widgetid="uniqName_5_24"><div class="c-channelIcon c-channelIcon--ad"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Retarget site visitors with Google ads</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Use Google’s huge ad network to remind people about the cool stuff they saw on your website.</p>
+        <div class="c-blueprintCard--automation dim-el display--none" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_26" widgetid="dijit__WidgetsInTemplateMixin_26">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/unsubSocialAd">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;facebook&#39;" id="uniqName_5_25" widgetid="uniqName_5_25"><div class="c-channelIcon c-channelIcon--ad"></div></div>
+
+        <div class="fwb margin-bottom--lv1">Advertise to former subscribers</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Share products and promotions with contacts who no longer receive your marketing emails.</p>
+        <div class="c-blueprintCard--automation dim-el display--none" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li><li id="dijit__WidgetsInTemplateMixin_27" widgetid="dijit__WidgetsInTemplateMixin_27">
+    <a data-dojo-attach-point="cardLink" tabindex="0" class="c-blueprintCard  c-choiceCard c-choiceCard--thick c-choiceCard_label nolink position--relative border-default border-radius--lv1" href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=32321#/create-campaign/explore/customerReengagement">
+        <div class="c-blueprintCard--icon" data-dojo-type="mojo/intent-overlay/ChannelIcon" data-dojo-props="channel: &#39;automation&#39;" id="uniqName_5_26" widgetid="uniqName_5_26"><div class="c-channelIcon "></div></div>
+
+        <div class="fwb margin-bottom--lv1">Win back lapsed customers</div>
+        <p class="fwn dim-el small-meta c-blueprintCard-description">Reach out to customers who haven’t bought anything in the past few months.</p>
+        <div class="c-blueprintCard--automation dim-el display--none display--block" data-dojo-attach-point="cardAutomation">
+            <img src="./Embedded Form Code _ Mailchimp_files/automation-icon.svg" alt="" class="c-blueprintCard--automation_img">
+            Automation
+        </div>
+    </a>
+</li></ul>
+    </div>
+</div></div>
+        </div>
+    
+        <!-- Configuration Container -->
+        <div data-dojo-attach-point="configurationViewContainer" style="display: none;" class="vertical-align--top width--100 white-space--normal iosSafariMenuFix padding-top--lv3">
+            <div data-dojo-attach-point="configurationView"></div>
+        </div>
+    </div>
+    </div>
+        </div>
+    </div>
+</div><div style="display: none; visibility: hidden;"><script>if("0000"!=google_tag_manager["GTM-MCZTKL"].macro(1)){var axel=Math.random()+"",a=1E13*axel;document.write('\x3cimg width\x3d"1" height\x3d"1" border\x3d"0" src\x3d"https://d.agkn.com/pixel/7902/?che\x3d'+a+"\x26type\x3d"+google_tag_manager["GTM-MCZTKL"].macro(2)+'"/\x3e')};</script></div><div style="display: none; visibility: hidden;">
+<script>!function(b){if(!window.pintrk){window.pintrk=function(){window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var a=window.pintrk;a.queue=[];a.version="3.0";a=document.createElement("script");a.async=!0;a.src=b;b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}}("https://s.pinimg.com/ct/core.js");pintrk("load","2613345057535",{em:"\x3cuser_email_address\x3e"});pintrk("page");</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;"> <script src="./Embedded Form Code _ Mailchimp_files/up_loader.1.1.0.js.download" type="text/javascript"></script>
+        <script type="text/javascript">ttd_dom_ready(function(){if("function"===typeof TTDUniversalPixelApi){var a=new TTDUniversalPixelApi;a.init("04ojwu0",["dsne1w6"],"https://insight.adsrvr.org/track/up")}});</script></div><div style="display: none; visibility: hidden;">
+<script type="text/javascript">_linkedin_data_partner_id="78584";</script><script type="text/javascript">(function(){var b=document.getElementsByTagName("script")[0],a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";b.parentNode.insertBefore(a,b)})();</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;">
+<script>!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1.1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="//static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("init","ny3f6");twq("track","PageView");</script>
+</div><div style="display: none; visibility: hidden;">
+<script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1592378257726461");fbq("track","PageView");</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;"><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://mailchimp.com",
+  "logo": "https://www.dexigner.com/images/news/xxi/31385.jpg",
+  "name": "Mailchimp"
+}
+</script></div><div style="display: none; visibility: hidden;">
+
+<script type="text/javascript">window.lightningjs||function(c){function a(a,d){d&&(d+=(/\?/.test(d)?"\x26":"?")+"lv\x3d1");c[a]||function(){var g=window,e=document,k=a,h=e.location.protocol,m="load",r=0;(function(){function a(){b.P(m);b.w=1;c[k]("_load")}c[k]=function(){function a(){a.id=l;return c[k].apply(a,arguments)}var l=++r;var e=this&&this!=g?this.id||0:0;(b.s=b.s||[]).push([l,e,arguments]);a.then=function(c,e,n){var d=b.fh[l]=b.fh[l]||[],k=b.eh[l]=b.eh[l]||[],f=b.ph[l]=b.ph[l]||[];c&&d.push(c);e&&k.push(e);n&&f.push(n);
+return a};return a};var b=c[k]._={};b.fh={};b.eh={};b.ph={};b.l=d?d.replace(/^\/\//,("https:"==h?h:"http:")+"//"):d;b.p={0:+new Date};b.P=function(a){b.p[a]=new Date-b.p[0]};b.w&&a();g.addEventListener?g.addEventListener(m,a,!1):g.attachEvent("on"+m,a);var t=function(){function a(){return["\x3chead\x3e\x3c/head\x3e\x3c",c,' onload\x3d"var d\x3d',q,";d.getElementsByTagName('head')[0].",h,"(d.",g,"('script')).",n,"\x3d'",b.l,"'\"\x3e\x3c/",c,"\x3e"].join("")}var c="body",d=e[c];if(!d)return setTimeout(t,
+100);b.P(1);var h="appendChild",g="createElement",n="src",m=e[g]("div"),r=m[h](e[g]("div")),f=e[g]("iframe"),q="document";m.style.display="none";d.insertBefore(m,d.firstChild).id=p+"-"+k;f.frameBorder="0";f.id=p+"-frame-"+k;/MSIE[ ]+6/.test(navigator.userAgent)&&(f[n]="javascript:false");f.allowTransparency="true";r[h](f);try{f.contentWindow[q].open()}catch(w){b.domain=e.domain;var u="javascript:var d\x3d"+q+".open();d.domain\x3d'"+e.domain+"';";f[n]=u+"void(0);"}try{var v=f.contentWindow[q];v.write(a());
+v.close()}catch(w){f[n]=u+'d.write("'+a().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}b.P(2)};b.l&&setTimeout(t,0)})()}();c[a].lv="1";return c[a]}var p="lightningjs",h=window[p]=a(p);h.require=a;h.modules=c}({});navigator.userAgent.match(/Android|BlackBerry|BB10|iPhone|iPad|iPod|Opera Mini|IEMobile/i)?window.usabilla_live=lightningjs.require("usabilla_live","//w.usabilla.com/4357abbfab53.js"):window.usabilla_live=lightningjs.require("usabilla_live","//w.usabilla.com/9f583da56bce.js");
+window.usabilla_live("data",{custom:{UserID:google_tag_manager["GTM-MCZTKL"].macro(3)}},"setEventCallback",function(c,a,p){"Feedback:Open"===a&&(document.cookie="campaign_complete\x3d1;path\x3d/")});</script></div><script src="./Embedded Form Code _ Mailchimp_files/saved_resource" type="text/javascript"></script><script src="./Embedded Form Code _ Mailchimp_files/adsct" type="text/javascript"></script><div class="usabilla_live_button_container" tabindex="0" style="width:40px;height:130px;position:fixed;z-index:999;right:0;top:50%;margin-top:-65px" aria-label="Usabilla Feedback Button"><iframe src="./Embedded Form Code _ Mailchimp_files/saved_resource(2).html" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" data-tags="right" title="Usabilla Feedback Button" style="width: 40px; height: 130px; margin: 0px; padding: 0px; border: 0px; overflow: hidden; z-index: 9998; position: absolute; left: 0px; top: 0px; box-shadow: 0px 0px 0px; background-color: transparent;"></iframe></div><iframe id="universal_pixel" allowtransparency="true" height="0" width="0" style="display:none;" src="./Embedded Form Code _ Mailchimp_files/up.html"></iframe></body></html>

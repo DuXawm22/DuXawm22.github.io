@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g fill="none" fill-rule="evenodd" stroke="#4E4E4E" stroke-width="2" transform="translate(1 1)">
+    <path d="M38,33 L33,38 L26,31 L22.125,37.425 C21.653,38.085 20.632,37.937 20.366,37.17 L13.524,16.096 C12.927,14.492 14.491,12.927 16.097,13.524 L37.17,20.366 C37.938,20.632 38.085,21.653 37.425,22.125 L31,26 L38,33 Z"/>
+    <path stroke-linecap="round" stroke-linejoin="round" d="M13,0 L13,8"/>
+    <polyline stroke-linecap="round" stroke-linejoin="round" points="9.223 16.778 8.445 17.556 7.667 18.334 6.889 19.111 6.112 19.889 5.333 20.667 4.556 21.445 3.778 22.223 3 23"/>
+    <polyline stroke-linecap="round" stroke-linejoin="round" points="2 2 2.889 2.889 3.777 3.778 4.667 4.667 5.556 5.556 6.444 6.444 7.333 7.333 8.223 8.222 9.111 9.111"/>
+    <path stroke-linecap="round" stroke-linejoin="round" d="M0,13 L8,13"/>
+    <polyline stroke-linecap="round" stroke-linejoin="round" points="23 3 22.223 3.778 21.444 4.556 20.667 5.333 19.889 6.111 19.111 6.889 18.333 7.667 17.556 8.444 16.777 9.222"/>
+  </g>
+</svg>
